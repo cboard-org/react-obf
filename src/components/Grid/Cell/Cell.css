@@ -1,0 +1,8 @@
+.Cell {
+  position: relative;
+  width: 0;
+  flex: 1;
+  margin: var(--cell-margin, 8px);
+  border-radius: 2px;
+  background: rgb(245, 245, 245);
+}
