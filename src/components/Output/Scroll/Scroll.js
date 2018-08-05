@@ -6,7 +6,9 @@ import './Scroll.css';
 const invertDir = dir => (dir === 'rtl' ? 'ltr' : 'rtl');
 
 export class Scroll extends PureComponent {
-  static propTypes = {};
+  static propTypes = {
+    direction: PropTypes.oneOf(['ltr', 'rtl'])
+  };
 
   static defaultProps = {
     direction: 'ltr'

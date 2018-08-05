@@ -8,11 +8,11 @@ const propTypes = {
   /**
    * Background color
    */
-  backgroundColor: PropTypes.string,
+  background_color: PropTypes.string,
   /**
    * Border color
    */
-  borderColor: PropTypes.string,
+  border_color: PropTypes.string,
   /**
    * Tile content
    */
@@ -34,7 +34,7 @@ const propTypes = {
 const defaultProps = {};
 
 const Tile = props => {
-  const { backgroundColor, borderColor, children, className, icon, variant, ...other } = props;
+  const { background_color, border_color, children, className, icon, variant, ...other } = props;
 
   const tileClassName = classNames('Tile', className);
 
@@ -45,12 +45,12 @@ const Tile = props => {
 
   const tileShapeStyles = {};
 
-  if (borderColor) {
-    tileShapeStyles.borderColor = borderColor;
+  if (border_color) {
+    tileShapeStyles.borderColor = border_color;
   }
 
-  if (backgroundColor) {
-    tileShapeStyles.backgroundColor = backgroundColor;
+  if (background_color) {
+    tileShapeStyles.backgroundColor = background_color;
   }
 
   return (

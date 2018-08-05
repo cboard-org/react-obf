@@ -3,9 +3,8 @@
   "id": "lots_of_stuff",
   "locale": "en",
   "name": "Lots of Stuff Board",
-  "ext_speaker_url": "http://www.example.com/mylink",
   "description_html":
-    "This is an .obf file that covers all documented components of the spec (images, sounds, alpha colors, proprietary symbols, custom vocalizations, spelling and actions, licensing, ext_ attributes, etc.).",
+    "This is an .obf file that covers all documented components of the spec (images, sounds, alpha colors, proprietary symbols, custom vocalizations, spelling and actions, licensing, etc.).",
   "license": {
     "type": "CC-By",
     "copyright_notice_url": "http://creativecommons.org/licenses/by",
@@ -53,7 +52,6 @@
     {
       "id": "b5",
       "label": "No way",
-      "ext_speaker_should_be_hidden_in_preview": true,
       "hidden": true
     },
     {
@@ -84,8 +82,7 @@
       "width": 300,
       "height": 300,
       "content_type": "image/png",
-      "url": "https://openclipart.org/image/300px/svg_to_png/145/PeterM_Sad_tiger_cat.png",
-      "ext_speaker_freshness": "some"
+      "url": "https://openclipart.org/image/300px/svg_to_png/145/PeterM_Sad_tiger_cat.png"
     },
     {
       "id": "i42",
@@ -110,7 +107,6 @@
       "id": "s2",
       "url": "http://soundbible.com/grab.php?id=132&type=mp3",
       "duration": 2,
-      "ext_speaker_coolness": 4,
       "content_type": "audio/mp3",
       "license": {
         "type": "public domain",
