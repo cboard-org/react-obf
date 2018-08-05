@@ -1,0 +1,13 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["plugin:prettier/recommended"],
+  "env": {
+    "es6": true
+  },
+  "plugins": ["react", "prettier"],
+  "parserOptions": {
+    "sourceType": "module",
+    "allowImportExportEverywhere": true
+  },
+  "rules": {}
+}
