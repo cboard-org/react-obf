@@ -1,9 +1,9 @@
-Basic Cell:
+Basic Output:
 
 ```jsx
 const props = {};
 
 <div style={{ height: '300px' }}>
-  <Cell {...props} />
+  <Output {...props} />
 </div>;
 ```
