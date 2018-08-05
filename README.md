@@ -15,11 +15,27 @@ npm install --save react-obf
 ```jsx
 import React, { Component } from 'react';
 
-import Board from 'react-obf';
+import Board, { Tile, Symbol } from 'react-obf';
+import obf from './obf-example.json';
 
 class Example extends Component {
+  renderTile(button) {
+    const { background_color, border_color } = button;
+
+    const tileProps = {
+      background_color,
+      border_color
+    };
+
+    return (
+      <Tile {...tileProps}>
+        <Symbol label={button.label} />
+      </Tile>
+    );
+  }
+
   render() {
-    return <Board />;
+    return <Board board={obf} renderTile={this.renderTile} />;
   }
 }
 ```
