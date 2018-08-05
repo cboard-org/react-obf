@@ -1,13 +1,9 @@
-Basic OBFViewer:
+Basic Tile:
 
 ```jsx
-const board = require('../../obf-example.json');
-
-const props = {
-  board
-};
+const props = {};
 
 <div style={{ height: '300px' }}>
-  <OBFViewer {...props} />
+  <Tile {...props} />
 </div>;
 ```

@@ -1,1 +1,1 @@
-export { default } from './components/OBFViewer/OBFViewer';
+export { default } from './components/Board/Board';

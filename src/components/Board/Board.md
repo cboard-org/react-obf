@@ -1,4 +1,4 @@
-Basic OBFViewer:
+Basic Board:
 
 ```jsx
 const board = require('../../obf-example.json');
@@ -8,6 +8,6 @@ const props = {
 };
 
 <div style={{ height: '300px' }}>
-  <OBFViewer {...props} />
+  <Board {...props} />
 </div>;
 ```

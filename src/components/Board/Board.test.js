@@ -1,7 +1,7 @@
-import OBFViewer from './';
+import Board from './';
 
-describe('OBFViewer', () => {
+describe('Board', () => {
   it('is truthy', () => {
-    expect(OBFViewer).toBeTruthy();
+    expect(Board).toBeTruthy();
   });
 });

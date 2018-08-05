@@ -15,11 +15,11 @@ npm install --save react-obf
 ```jsx
 import React, { Component } from 'react';
 
-import OBFViewer from 'react-obf';
+import Board from 'react-obf';
 
 class Example extends Component {
   render() {
-    return <OBFViewer />;
+    return <Board />;
   }
 }
 ```
