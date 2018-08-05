@@ -1,7 +1,10 @@
 Basic Tile:
 
 ```jsx
-const props = {};
+const props = {
+  background_color: 'red',
+  border_color: 'green'
+};
 
 <div style={{ height: '300px' }}>
   <Tile {...props} />
