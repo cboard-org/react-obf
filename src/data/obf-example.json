@@ -36,9 +36,11 @@
       "background_color": "rgb( 200, 200, 200) ",
       "border_color": "rgb(0, 0, 255)",
       "load_board": {
-        "name": "Cool Remote Board",
-        "url": "http://www.example.com/load_board",
-        "data_url": "http://www.example.com/download/load_board.obf?auth=asdfjkl"
+        "id": "1",
+        "name": "Drinks",
+        "data_url": "http://myboards.net/api/v1/boards/123",
+        "url": "http://myboards.net/boards/123",
+        "path": "boards/3.obf"
       }
     },
     {

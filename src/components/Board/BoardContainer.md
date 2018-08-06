@@ -4,7 +4,7 @@ Basic Board:
 const board = require('../../data/obf-example.json');
 
 function renderTile(button) {
-  const { background_color, border_color } = button;
+  const { background_color, border_color, image } = button;
 
   const tileProps = {
     background_color,
@@ -13,7 +13,7 @@ function renderTile(button) {
 
   return (
     <Tile {...tileProps}>
-      <Symbol label={button.label} />
+      <Symbol label={button.label} image={image ? image.url : ''} />
     </Tile>
   );
 }
@@ -23,7 +23,7 @@ const props = {
   renderButton: renderTile
 };
 
-<div style={{ height: '300px' }}>
-  <Board {...props} />
+<div style={{ height: '500px' }}>
+  <BoardContainer {...props} />
 </div>;
 ```

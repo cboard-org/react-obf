@@ -1,15 +1,29 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+import Bar from '../Bar/Bar';
 import Grid from '../Grid/Grid';
 import Output from '../Output/Output';
+import './Board.css';
 
 class Board extends Component {
   static propTypes = {
     board: PropTypes.shape({
+      /**
+       * ID
+       */
       id: PropTypes.string,
+      /**
+       * Locale
+       */
       locale: PropTypes.string,
+      /**
+       * Name
+       */
       name: PropTypes.string,
+      /**
+       * Buttons
+       */
       buttons: PropTypes.arrayOf(
         PropTypes.shape({
           action: PropTypes.string,
@@ -24,9 +38,13 @@ class Board extends Component {
             name: PropTypes.string,
             url: PropTypes.string,
             data_url: PropTypes.string
-          })
+          }),
+          hidden: PropTypes.bool
         })
       ),
+      /**
+       * Images
+       */
       images: PropTypes.arrayOf(
         PropTypes.shape({
           id: PropTypes.string,
@@ -40,27 +58,55 @@ class Board extends Component {
           author_url: PropTypes.string
         })
       ),
+      /**
+       * Sounds
+       */
       sounds: PropTypes.arrayOf(PropTypes.shape({})),
+      /**
+       * Grid
+       */
       grid: PropTypes.shape({
+        /**
+         * Number of rows
+         */
         rows: PropTypes.number,
+        /**
+         * Number of columns
+         */
         columns: PropTypes.number,
+        /**
+         * Buttons order
+         */
         order: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.string))
       })
     })
   };
 
   render() {
-    const { board, renderTile } = this.props;
+    const {
+      board,
+      output,
+      onOutputBackspaceRequested,
+      onOutputClearRequested,
+      renderButton
+    } = this.props;
 
     return (
       <div className="Board">
         <div className="Board__output">
-          <Output />
+          <Output
+            onBackspaceClick={onOutputBackspaceRequested}
+            onClearClick={onOutputClearRequested}
+            symbols={output}
+          />
         </div>
 
         <div className="Board__main">
+          <div className="Board__navbar">
+            <Bar groupMiddle={board.name} />
+          </div>
           <div className="Board__grid">
-            <Grid items={board.buttons} order={board.order} renderItem={renderTile} />
+            <Grid items={board.buttons} order={board.order} renderItem={renderButton} />
           </div>
         </div>
       </div>

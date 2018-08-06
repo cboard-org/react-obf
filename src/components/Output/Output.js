@@ -10,6 +10,14 @@ import './Output.css';
 class Output extends PureComponent {
   static propTypes = {
     /**
+     *
+     */
+    onBackspaceClick: PropTypes.func,
+    /**
+     *
+     */
+    onClearClick: PropTypes.func,
+    /**
      * Symbols to output
      */
     symbols: PropTypes.arrayOf(

@@ -54,11 +54,11 @@ const Tile = props => {
   }
 
   return (
-    <button className={tileClassName} type="button" {...other}>
+    <div className={tileClassName} {...other}>
       <div className={tileShapeClassName} style={tileShapeStyles} />
       {icon && <div className="Tile__icon-placeholder">{<icon />}</div>}
       {children}
-    </button>
+    </div>
   );
 };
 
