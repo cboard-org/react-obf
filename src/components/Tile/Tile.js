@@ -22,10 +22,6 @@ const propTypes = {
    */
   className: PropTypes.string,
   /**
-   *
-   */
-  icon: PropTypes.node,
-  /**
    * Type of tile
    */
   variant: PropTypes.oneOf(['button', 'folder'])
@@ -34,29 +30,18 @@ const propTypes = {
 const defaultProps = {};
 
 const Tile = props => {
-  const { background_color, border_color, children, className, icon, variant, ...other } = props;
-
-  const tileClassName = classNames('Tile', className);
+  const { background_color, border_color, children, className, style, variant, ...other } = props;
 
   const folder = variant === 'folder';
-  const tileShapeClassName = classNames('TileShape', {
-    'TileShape--folder': folder
-  });
 
-  const tileShapeStyles = {};
-
-  if (border_color) {
-    tileShapeStyles.borderColor = border_color;
-  }
-
-  if (background_color) {
-    tileShapeStyles.backgroundColor = background_color;
-  }
+  const tileStyle = {
+    ...style,
+    backgroundColor: background_color,
+    borderColor: border_color
+  };
 
   return (
-    <div className={tileClassName} {...other}>
-      <div className={tileShapeClassName} style={tileShapeStyles} />
-      {icon && <div className="Tile__icon-placeholder">{<icon />}</div>}
+    <div className="Tile" style={tileStyle} {...other}>
       {children}
     </div>
   );

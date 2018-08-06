@@ -13,7 +13,7 @@ function renderTile(button) {
 
   return (
     <Tile {...tileProps}>
-      <Symbol label={button.label} image={image ? image.url : ''} />
+      <Symbol label={button.label} image={image ? image.url || image.data : ''} />
     </Tile>
   );
 }

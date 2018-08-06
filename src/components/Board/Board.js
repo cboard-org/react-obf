@@ -85,6 +85,8 @@ class Board extends Component {
   render() {
     const {
       board,
+      navbarEnd,
+      navbarStart,
       output,
       onOutputBackspaceRequested,
       onOutputClearRequested,
@@ -103,7 +105,7 @@ class Board extends Component {
 
         <div className="Board__main">
           <div className="Board__navbar">
-            <Bar groupMiddle={board.name} />
+            <Bar groupStart={navbarStart} groupMiddle={board.name} groupEnd={navbarEnd} />
           </div>
           <div className="Board__grid">
             <Grid items={board.buttons} order={board.order} renderItem={renderButton} />
