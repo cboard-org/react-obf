@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { ButtonActions } from './constants';
 import Board from './Board';
 import BoardButton from './BoardButton/BoardButton';
+import BackButton from './BackButton/BackButton';
 
 class BoardContainer extends Component {
   static propTypes = {
@@ -119,6 +120,7 @@ class BoardContainer extends Component {
     return (
       <Board
         board={{ ...board, buttons: this.state.buttons }}
+        navbarStart={<BackButton />}
         output={this.state.output}
         onOutputClearRequested={this.handleOutputClear}
         onOutputBackspaceRequested={this.handleOutputBackspace}
