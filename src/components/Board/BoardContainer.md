@@ -1,4 +1,4 @@
-Basic Board:
+Basic BoardContainer:
 
 ```jsx
 const board = require('../../data/obf-example.json');
@@ -21,6 +21,9 @@ function renderTile(button) {
 
 const props = {
   board,
+  onBoardLoadRequested: () => {
+    console.log('load board');
+  },
   renderButton: renderTile
 };
 
