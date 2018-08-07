@@ -22,6 +22,10 @@ const propTypes = {
    */
   className: PropTypes.string,
   /**
+   * When true, Tile is hidden
+   */
+  hidden: PropTypes.bool,
+  /**
    * Type of tile
    */
   variant: PropTypes.oneOf(['button', 'folder'])

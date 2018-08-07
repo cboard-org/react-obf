@@ -103,7 +103,7 @@ class BoardContainer extends Component {
   renderButton = button => {
     const { renderButton } = this.props;
 
-    return (
+    return !button.hidden ? (
       <BoardButton
         onClick={() => {
           this.handleButtonClick(button);
@@ -111,7 +111,7 @@ class BoardContainer extends Component {
       >
         {renderButton(button)}
       </BoardButton>
-    );
+    ) : null;
   };
 
   render() {
