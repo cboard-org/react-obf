@@ -22,21 +22,17 @@ const propTypes = {
    */
   className: PropTypes.string,
   /**
-   * When true, Tile is hidden
-   */
-  hidden: PropTypes.bool,
-  /**
    * Type of tile
    */
-  variant: PropTypes.oneOf(['button', 'folder'])
+  type: PropTypes.oneOf(['folder'])
 };
 
 const defaultProps = {};
 
 const Tile = props => {
-  const { background_color, border_color, children, className, style, variant, ...other } = props;
+  const { background_color, border_color, children, className, style, type, ...other } = props;
 
-  const folder = variant === 'folder';
+  const folder = type === 'folder';
 
   const tileStyle = {
     ...style,
@@ -44,8 +40,12 @@ const Tile = props => {
     borderColor: border_color
   };
 
+  const tileClassName = classNames('Tile', className, {
+    'Tile--folder': folder
+  });
+
   return (
-    <div className="Tile" style={tileStyle} {...other}>
+    <div className={tileClassName} style={tileStyle} {...other}>
       {children}
     </div>
   );

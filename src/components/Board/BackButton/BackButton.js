@@ -1,11 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import './BackButton.css';
-
-const propTypes = {};
-
-const defaultProps = {};
 
 const BackButton = props => {
   const { children, className, ...other } = props;
@@ -16,8 +11,5 @@ const BackButton = props => {
     </button>
   );
 };
-
-BackButton.propTypes = propTypes;
-BackButton.defaultProps = defaultProps;
 
 export default BackButton;

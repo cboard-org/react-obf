@@ -2,6 +2,22 @@
   box-sizing: border-box;
   height: 100%;
   width: 100%;
+  padding: 16px;
   border-radius: 2px;
   border: 2px solid transparent;
+}
+
+.Tile--folder::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-top: 16px solid transparent;
+  border-bottom: 16px solid transparent;
+  border-left: 16px solid #000;
+  transform-origin: center right;
+  transform: translateY(-16px) rotate(-45deg);
+  z-index: 1;
 }

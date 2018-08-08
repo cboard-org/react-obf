@@ -6,7 +6,8 @@
 }
 
 .Output__value {
-  height: calc(100% - 10px);
+  box-sizing: border-box;
+  height: 100%;
   width: 100px;
-  padding: 0 5px;
+  padding: 5px;
 }

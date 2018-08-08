@@ -20,7 +20,7 @@ import obf from './obf-example.json';
 
 class Example extends Component {
   renderTile(button) {
-    const { background_color, border_color } = button;
+    const { background_color, border_color, label } = button;
 
     const tileProps = {
       background_color,
@@ -29,7 +29,7 @@ class Example extends Component {
 
     return (
       <Tile {...tileProps}>
-        <Symbol label={button.label} />
+        <Symbol label={label} />
       </Tile>
     );
   }

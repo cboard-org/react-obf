@@ -93,6 +93,8 @@ class Board extends Component {
       renderButton
     } = this.props;
 
+    const { grid } = board;
+
     return (
       <div className="Board">
         <div className="Board__output">
@@ -108,7 +110,13 @@ class Board extends Component {
             <Bar groupStart={navbarStart} groupMiddle={board.name} groupEnd={navbarEnd} />
           </div>
           <div className="Board__grid">
-            <Grid items={board.buttons} order={board.order} renderItem={renderButton} />
+            <Grid
+              columns={grid.columns}
+              items={board.buttons}
+              order={grid.order}
+              renderItem={renderButton}
+              rows={grid.rows}
+            />
           </div>
         </div>
       </div>

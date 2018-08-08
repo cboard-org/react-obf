@@ -9,7 +9,7 @@ function renderTile(button) {
   const tileProps = {
     background_color,
     border_color,
-    variant: button.load_board ? 'folder' : 'button'
+    type: button.load_board && 'folder'
   };
 
   return (
@@ -19,12 +19,15 @@ function renderTile(button) {
   );
 }
 
+const speech = {};
+
 const props = {
   board,
-  onBoardLoadRequested: () => {
-    console.log('load board');
-  },
-  renderButton: renderTile
+  renderTile,
+  speech,
+  onBoardLoadRequested: board => {
+    console.log('load board:', board);
+  }
 };
 
 <div style={{ height: '500px' }}>
