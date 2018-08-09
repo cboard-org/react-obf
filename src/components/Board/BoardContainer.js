@@ -146,32 +146,35 @@ class BoardContainer extends Component {
   }
 
   outputClear() {
-    const { onOutputChange } = this.props;
     const output = [];
-
-    if (onOutputChange) {
-      onOutputChange(output);
-    } else {
-      this.setState({ output });
-    }
+    this.changeOutput(output);
   }
 
   outputPop() {
-    const { onOutputChange } = this.props;
-
     const output = [...this.state.output];
     output.pop();
-
-    if (onOutputChange) {
-      onOutputChange(output);
-    } else {
-      this.setState({ output });
-    }
+    this.changeOutput(output);
   }
 
   outputPush(symbol) {
-    const { onOutputChange } = this.props;
     const output = [...this.state.output, symbol];
+    this.changeOutput(output);
+  }
+
+  outputJoinLabel(label) {
+    if (this.state.output.length === 0) {
+      return;
+    }
+
+    const output = [...this.state.output];
+    const lastSymbol = output[output.length - 1];
+    lastSymbol.label = `${lastSymbol.label}${label}`;
+
+    this.changeOutput(output);
+  }
+
+  changeOutput(output) {
+    const { onOutputChange } = this.props;
 
     if (onOutputChange) {
       onOutputChange(output);
@@ -195,6 +198,11 @@ class BoardContainer extends Component {
         break;
       default:
       // no default
+    }
+
+    if (action.startsWith('+')) {
+      const label = action.slice(1);
+      this.outputJoinLabel(label);
     }
   }
 

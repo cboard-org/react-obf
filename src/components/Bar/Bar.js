@@ -44,9 +44,9 @@ export class Bar extends Component {
 
     return (
       <T className={barClassName} {...other}>
-        <div className="Bar__group--start">{groupStart}</div>
-        <div className="Bar__group--middle">{groupMiddle}</div>
-        <div className="Bar__group--end">{groupEnd}</div>
+        <div className="Bar__group Bar__group--start">{groupStart}</div>
+        <div className="Bar__group Bar__group--middle">{groupMiddle}</div>
+        <div className="Bar__group Bar__group--end">{groupEnd}</div>
       </T>
     );
   }
