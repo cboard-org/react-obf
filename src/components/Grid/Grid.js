@@ -11,7 +11,7 @@ import './Grid.css';
  * @param {number} rows number of rows
  * @param {number} columns number of columns
  */
-function createGrid(rows, columns) {
+function createEmptyGrid(rows, columns) {
   const grid = [...Array(rows)].map(() => [...Array(columns)]);
   return grid;
 }
@@ -21,26 +21,34 @@ function fillEmptyCells(grid, items) {
 
   return grid.map(row =>
     row.map(item => {
-      return item ? item : itemQueue.shift();
+      return item || itemQueue.shift();
     })
   );
 }
 
-function sortGrid(grid, order, items) {
-  const sortedGrid = [...grid];
-  const itemQueue = [...items];
+function iterateGridItems(grid, callback) {
+  grid.forEach((row, rowIndex) => {
+    row.forEach((item, columnIndex) => {
+      callback(item, rowIndex, columnIndex);
+    });
+  });
+}
 
-  order.forEach((row, rowIndex) =>
-    row.forEach((itemId, columnIndex) => {
-      const itemIndex = itemQueue.findIndex(item => item.id === itemId);
+function sortGrid(emptyGrid, order, items) {
+  const grid = [...emptyGrid];
+  const itemsToSort = [...items];
 
-      if (itemIndex > -1) {
-        sortedGrid[rowIndex][columnIndex] = itemQueue.splice(itemIndex, 1)[0];
-      }
-    })
-  );
+  iterateGridItems(order, (itemId, rowIndex, columnIndex) => {
+    const itemIndex = itemsToSort.findIndex(item => item.id === itemId);
+    const itemFound = itemIndex > -1;
 
-  return fillEmptyCells(sortedGrid, itemQueue);
+    if (itemFound) {
+      const item = itemsToSort.splice(itemIndex, 1)[0];
+      grid[rowIndex][columnIndex] = item;
+    }
+  });
+
+  return fillEmptyCells(grid, itemsToSort);
 }
 
 class Grid extends Component {
@@ -86,8 +94,8 @@ class Grid extends Component {
 
   static getDerivedStateFromProps(nextProps, prevState) {
     const { items, columns, order, rows } = nextProps;
-    const grid = createGrid(rows, columns);
-    const sortedGrid = sortGrid(grid, order, items);
+    const emptyGrid = createEmptyGrid(rows, columns);
+    const sortedGrid = sortGrid(emptyGrid, order, items);
     return { grid: sortedGrid };
   }
 
@@ -110,7 +118,9 @@ class Grid extends Component {
       <div className="Grid" style={gridStyle}>
         {this.state.grid.map((row, rowIndex) => (
           <Row key={rowIndex}>
-            {row.map((item, cellIndex) => <Cell key={cellIndex}>{item && renderItem(item)}</Cell>)}
+            {row.map((item, cellIndex) => (
+              <Cell key={cellIndex}>{item && renderItem(item)}</Cell>
+            ))}
           </Row>
         ))}
       </div>

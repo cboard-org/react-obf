@@ -1,14 +1,16 @@
 import React from 'react';
 
+import ButtonBase from '../../ButtonBase/ButtonBase';
+import ArrowBackSvg from './ArrowBackSvg';
 import './BackButton.css';
 
 const BackButton = props => {
   const { children, className, ...other } = props;
 
   return (
-    <button className="BackButton" type="button" {...other}>
-      back
-    </button>
+    <ButtonBase className="BackButton" title="Click to go back" {...other}>
+      <ArrowBackSvg />
+    </ButtonBase>
   );
 };
 

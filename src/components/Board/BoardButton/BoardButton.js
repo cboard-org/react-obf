@@ -1,14 +1,15 @@
 import React from 'react';
 
+import ButtonBase from '../../ButtonBase/ButtonBase';
 import './BoardButton.css';
 
 const BoardButton = props => {
   const { children, className, ...other } = props;
 
   return (
-    <button className="BoardButton" type="button" {...other}>
+    <ButtonBase className="BoardButton" {...other}>
       {children}
-    </button>
+    </ButtonBase>
   );
 };
 

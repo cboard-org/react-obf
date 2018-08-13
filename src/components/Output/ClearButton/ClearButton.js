@@ -1,11 +1,14 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 
-export class ClearButton extends Component {
+import ButtonBase from '../../ButtonBase/ButtonBase';
+import ClearSvg from './ClearSvg';
+
+export class ClearButton extends PureComponent {
   render() {
     return (
-      <button aria-label="Clear" {...this.props}>
-        clear
-      </button>
+      <ButtonBase aria-label="Clear" title="Clear" {...this.props}>
+        <ClearSvg />
+      </ButtonBase>
     );
   }
 }

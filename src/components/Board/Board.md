@@ -20,7 +20,7 @@ function renderTile(button) {
 
 const props = {
   board,
-  renderButton: renderTile
+  renderBoardButton: renderTile
 };
 
 <div style={{ height: '300px' }}>

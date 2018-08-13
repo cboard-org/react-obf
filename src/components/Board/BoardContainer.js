@@ -245,7 +245,7 @@ class BoardContainer extends Component {
     }
   };
 
-  renderButton = button => {
+  renderBoardButton = button => {
     const { renderTile } = this.props;
 
     return button.hidden ? null : (
@@ -269,7 +269,7 @@ class BoardContainer extends Component {
         output={this.state.output}
         onOutputClearRequested={this.handleOutputClear}
         onOutputBackspaceRequested={this.handleOutputBackspace}
-        renderButton={this.renderButton}
+        renderBoardButton={this.renderBoardButton}
       />
     );
   }

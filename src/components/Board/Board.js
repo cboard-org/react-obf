@@ -90,7 +90,7 @@ class Board extends Component {
       output,
       onOutputBackspaceRequested,
       onOutputClearRequested,
-      renderButton
+      renderBoardButton
     } = this.props;
 
     const { grid } = board;
@@ -114,7 +114,7 @@ class Board extends Component {
               columns={grid.columns}
               items={board.buttons}
               order={grid.order}
-              renderItem={renderButton}
+              renderItem={renderBoardButton}
               rows={grid.rows}
             />
           </div>
