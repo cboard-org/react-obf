@@ -286,17 +286,9 @@ class Board extends Component {
     onSpeak && onSpeak(text);
   };
 
-  renderBackspaceButton = () => {
-    const backspaceButton = (
-      <Scannable>{this.props.backspaceButton || <BackspaceButton />}</Scannable>
-    );
-    return backspaceButton;
-  };
+  renderBackspaceButton = () => this.props.backspaceButton || <BackspaceButton />;
 
-  renderClearButton = () => {
-    const clearButton = <Scannable>{this.props.clearButton || <ClearButton />}</Scannable>;
-    return clearButton;
-  };
+  renderClearButton = () => this.props.clearButton || <ClearButton />;
 
   renderBoardButton = button => {
     const { renderBoardButton } = this.props;
@@ -323,8 +315,8 @@ class Board extends Component {
           outputComponent={
             <Scannable disabled={!this.state.output.length}>
               <Output
-                backspaceButton={this.renderBackspaceButton()}
-                clearButton={this.renderClearButton()}
+                backspaceButton={<Scannable>{this.renderBackspaceButton()}</Scannable>}
+                clearButton={<Scannable>{this.renderClearButton()}</Scannable>}
                 onChange={this.changeOutput}
                 onClick={this.handleOutputClick}
                 scrollWrapper={Scannable}
