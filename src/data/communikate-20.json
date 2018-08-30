@@ -566,6 +566,30 @@
         "private": false,
         "key": "kate-mccallum/communikate-top-page",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "hello": "שלום",
+          "I want to talk to you": "אני רוצה לדבר איתך",
+          "Chatting": "שיחה",
+          "Questions": "שאלות",
+          "Food": "אוכל",
+          " I": "אני",
+          "People": "אנשים",
+          "Personal Care": "",
+          "Little Words": "",
+          "My Day": "היום שלי",
+          "Action": "פעולות",
+          "go": "",
+          "want": "רוצה",
+          "Describe": "לתאר",
+          "Things": "דברים",
+          "yes": "כן",
+          "Time": "זמן",
+          "Places": "מקומות",
+          "Leisure": "פנאי",
+          "no": "לא"
+        }
       }
     },
     "1_236": {

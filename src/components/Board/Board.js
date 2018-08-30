@@ -15,11 +15,19 @@ import { Scannable, Scanner } from 'react-scannable';
 const getImageSrc = image => (image ? image.data || /* image.path || */ image.url : '');
 const getSoundSrc = sound => (sound ? sound.data || sound.path || sound.url : '');
 
+const getLocaleMessage = (board, message) => {
+  const { locale, strings } = board;
+  const localeMessage = strings && strings[locale] && strings[locale][message];
+  return localeMessage || message;
+};
+
 const denormalizeBoardButtons = board =>
-  board.buttons.map(({ image_id, sound_id, ...other }) => ({
+  board.buttons.map(({ image_id, label, sound_id, vocalization, ...other }) => ({
     ...other,
     image: getImageSrc(board.images.find(image => image.id === image_id)),
-    sound: getSoundSrc(board.sounds.find(sound => sound.id === sound_id))
+    label: getLocaleMessage(board, label),
+    sound: getSoundSrc(board.sounds.find(sound => sound.id === sound_id)),
+    vocalization: getLocaleMessage(board, vocalization)
   }));
 
 /**
