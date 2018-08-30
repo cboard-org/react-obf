@@ -1,0 +1,77 @@
+{
+  "name": "react-obf",
+  "version": "0.0.10",
+  "description": "",
+  "author": "shayc",
+  "license": "MIT",
+  "repository": "cboard-org/react-obf",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "jsnext:main": "dist/index.es.js",
+  "scripts": {
+    "test": "cross-env CI=1 react-scripts test --env=jsdom",
+    "test:watch": "react-scripts test --env=jsdom",
+    "build": "rollup -c",
+    "start": "yarn run styleguide",
+    "styleguide": "styleguidist server",
+    "styleguide:build": "styleguidist build",
+    "prepare": "yarn run build",
+    "predeploy": "yarn run styleguide:build",
+    "deploy": "gh-pages -d styleguide",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,json,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "color-contrast": "^0.0.1",
+    "invariant": "^2.2.4",
+    "react-scannable": "^0.0.10",
+    "react-sizeme": "^2.5.2"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.6.2",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.1",
+    "@types/react": "^16.4.11",
+    "@types/react-dom": "^16.0.7",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.6",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "cross-env": "^5.2.0",
+    "eslint": "^5.4.0",
+    "eslint-config-prettier": "^3.0.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-prettier": "^2.6.2",
+    "eslint-plugin-promise": "^4.0.0",
+    "eslint-plugin-react": "^7.11.1",
+    "gh-pages": "^1.2.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.2.2",
+    "prettier": "1.14.2",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-scripts": "^1.1.5",
+    "react-styleguidist": "^7.2.5",
+    "rollup": "^0.65.0",
+    "rollup-plugin-babel": "^3.0.7",
+    "rollup-plugin-commonjs": "^9.1.6",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-peer-deps-external": "^2.2.0",
+    "rollup-plugin-postcss": "^1.6.2",
+    "rollup-plugin-url": "^1.4.0"
+  },
+  "files": [
+    "dist"
+  ]
+}

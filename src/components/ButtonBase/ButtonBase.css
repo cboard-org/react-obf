@@ -1,0 +1,10 @@
+.ButtonBase {
+  font-size: inherit;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: 0;
+  color: inherit;
+  fill: currentColor;
+}

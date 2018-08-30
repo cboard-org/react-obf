@@ -1,0 +1,31 @@
+.Board {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  background: #fff;
+  color: #222;
+  user-select: none;
+}
+
+.Board__output {
+  height: 7.5em;
+}
+
+.Board__main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.Board__navbar {
+  height: 3em;
+  /* TODO: colors not here */
+  background: #222;
+  color: #fff;
+}
+
+.Board__grid {
+  flex: 1;
+}

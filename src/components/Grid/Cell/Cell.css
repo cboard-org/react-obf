@@ -1,0 +1,16 @@
+.Cell {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% - (var(--cell-margin, 8px) * 2));
+  margin: var(--cell-margin, 8px);
+  border-radius: 2px;
+  /* solves rendering issues with iOS */
+  min-width: 0;
+}
+
+.Cell:empty {
+  /* background: rgb(245, 245, 245); */
+}

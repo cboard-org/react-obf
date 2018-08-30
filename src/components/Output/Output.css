@@ -1,0 +1,19 @@
+.Output {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background: #fff;
+}
+
+.Output__value {
+  box-sizing: border-box;
+  height: 100%;
+  min-width: 7em;
+  padding: 0.5em;
+}
+
+.Output__button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

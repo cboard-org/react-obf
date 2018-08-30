@@ -1,0 +1,11 @@
+/* TODO: duplicate code with BackspaceButton */
+.ClearButton {
+  padding: 0.5em;
+  line-height: 0;
+  transition: background-color 0.25s;
+}
+
+.ClearButton:hover {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
