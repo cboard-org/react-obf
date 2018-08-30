@@ -1101,6 +1101,30 @@
         "private": false,
         "key": "kate-mccallum/communikate-chatting",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "About Me": "",
+          "WML": "",
+          "I can't find what I want to say": "",
+          "bye": "",
+          "I'm fine": "",
+          "ok": "",
+          "I'm not so good": "",
+          "please": "",
+          "thank you": "",
+          "sorry": "",
+          "excuse me": "",
+          "maybe": "",
+          "really": "",
+          "I don't know": "",
+          "My Stories": "",
+          "I love you": "",
+          "but": "",
+          "ouch ": "",
+          "so": ""
+        }
       }
     },
     "1_237": {
@@ -1566,6 +1590,29 @@
         "private": false,
         "key": "kate-mccallum/communikate-questions",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "questions": "",
+          "why": "",
+          "when": "",
+          "could": "",
+          "what": "",
+          "who": "",
+          "where": "",
+          "which": "",
+          "would": "",
+          "how": "",
+          "can I see that?": "",
+          "how much?": "",
+          "should": "",
+          "how are you?": "",
+          "What have you been doing?": "",
+          "What do you think?": "",
+          "What's next?": "",
+          "What's that?": ""
+        }
       }
     },
     "1_238": {
@@ -2128,6 +2175,30 @@
         "private": false,
         "key": "kate-mccallum/communikate-food",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "Breakfast": "",
+          "Lunch": "",
+          "Meals": "",
+          "Meat": "",
+          "I'm hungry": "",
+          "Vegetables": "",
+          "Fruit": "",
+          "Drinks": "",
+          "Fast Food": "",
+          "I'm thirsty": "",
+          "Snack": "",
+          "Sauces": "",
+          "Salad": "",
+          "Cooking Words": "",
+          "some": "",
+          "with": "",
+          "and": "",
+          "Food Chat": "",
+          "favorite food": ""
+        }
       }
     },
     "1_239": {
@@ -2652,6 +2723,30 @@
         "private": false,
         "key": "kate-mccallum/communikate-people",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "people": "",
+          "Friends": "",
+          "School/College/Work Mates": "",
+          "Support Staff": "",
+          "I'm": "",
+          "me": "",
+          "my": "",
+          "mine": "",
+          "Education Staff": "",
+          "we": "",
+          "they": "",
+          "boy": "",
+          "girl": "",
+          "Job": "",
+          "it": "",
+          "you": "",
+          "he": "",
+          "she": "",
+          "Family": ""
+        }
       }
     },
     "1_240": {
@@ -3110,6 +3205,27 @@
         "private": false,
         "key": "kate-mccallum/communikate-personal-care",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "I need the toilet": "",
+          "I need some help": "",
+          "Health": "",
+          " Body Parts": "",
+          "clothes": "",
+          "I want to chill out on my bed": "",
+          "I'd like a shave": "",
+          "I need my medication": "",
+          "Please can you clean my glasses": "",
+          "Can you do my nails please": "",
+          "I'd like a shower": "",
+          "I'd love a bath": "",
+          "Things That Help": "",
+          "Toiletries": "",
+          "I need to get changed": "",
+          "Can you do my hair please": ""
+        }
       }
     },
     "1_241": {
@@ -3609,6 +3725,30 @@
         "private": false,
         "key": "kate-mccallum/communikate-little-words",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "Position Words": "",
+          "fun": "",
+          "away": "",
+          "a": "",
+          "all": "",
+          "this": "",
+          "that": "",
+          "is": "",
+          "am": "",
+          "none": "",
+          "to": "",
+          "from": "",
+          "about": "",
+          "be": "",
+          "some": "",
+          "with": "",
+          "and": "",
+          "at": "",
+          "the": ""
+        }
       }
     },
     "1_242": {
@@ -3777,6 +3917,15 @@
         "private": false,
         "key": "kate-mccallum/communikate-my-day",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "Spelling": "",
+          "Numbers": "",
+          "Timetable": "",
+          "Computer control": ""
+        }
       }
     },
     "1_243": {
@@ -4276,6 +4425,30 @@
         "private": false,
         "key": "kate-mccallum/communikate-action",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "do": "",
+          "help": "",
+          "look": "",
+          "see": "",
+          "stop": "",
+          "come": "",
+          "get": "",
+          "give": "",
+          "think": "",
+          "like": "",
+          "listen": "",
+          "make": "",
+          "put": "",
+          "tell": "",
+          "take": "",
+          "turn": "",
+          "open": "",
+          "close": "",
+          "More Action Words": ""
+        }
       }
     },
     "1_244": {
@@ -4785,6 +4958,30 @@
         "private": false,
         "key": "kate-mccallum/communikate-describe",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "Feelings": "",
+          "Colour": "",
+          "Shapes": "",
+          "Opposites": "",
+          "all": "",
+          "more": "",
+          "nice": "",
+          "wrong": "",
+          "right": "",
+          "finished": "",
+          "pretty": "",
+          "mean": "",
+          "different": "",
+          "same": "",
+          "problem": "",
+          "important": "",
+          "because": "",
+          "idea": "",
+          "favorite": ""
+        }
       }
     },
     "1_245": {
@@ -5329,6 +5526,28 @@
         "private": false,
         "key": "kate-mccallum/communikate-things",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "Common Things": "",
+          "Art Things": "",
+          "Health": "",
+          "Body Parts": "",
+          "Clothes": "",
+          "Computer": "",
+          "Furniture": "",
+          "Toys": "",
+          "Kitchen Equipment": "",
+          "Money": "",
+          "Office": "",
+          "Sports": "",
+          "Things That Help": "",
+          "Toiletries": "",
+          "Tools": "",
+          "Transport": "",
+          "Nature": ""
+        }
       }
     },
     "1_246": {
@@ -5834,6 +6053,30 @@
         "private": false,
         "key": "kate-mccallum/communikate-time",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "Time": "",
+          "Days": "",
+          "Months": "",
+          "Special Days": "",
+          "yesterday": "",
+          "today": "",
+          "tomorrow": "",
+          "later": "",
+          "late": "",
+          "morning": "",
+          "afternoon": "",
+          "evening": "",
+          "now": "",
+          "never": "",
+          "again": "",
+          "ready": "",
+          "hurry": "",
+          "before": "",
+          "after": ""
+        }
       }
     },
     "1_247": {
@@ -6346,6 +6589,30 @@
         "private": false,
         "key": "kate-mccallum/communikate-places",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "place": "",
+          "my day places": "",
+          "Shops": "",
+          "Outside": "",
+          "work": "",
+          "school or college": "",
+          "town": "",
+          "hospital": "",
+          "airport": "",
+          "dentist": "",
+          "bank": "",
+          "doctors": "",
+          "pool": "",
+          "restaurant": "",
+          "library": "",
+          "pub": "",
+          "post office": "",
+          "cinema": "",
+          "Home": ""
+        }
       }
     },
     "1_248": {
@@ -6678,6 +6945,21 @@
         "private": false,
         "key": "kate-mccallum/communikate-leisure",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "Pictures": "",
+          "Phone": "",
+          "MP3": "",
+          "Computer Control": "",
+          "I want": "",
+          "DVD": "",
+          "TV": "",
+          "volume up": "",
+          "volume down": "",
+          "my stories": ""
+        }
       }
     },
     "1_249": {
@@ -7133,6 +7415,28 @@
         "private": false,
         "key": "kate-mccallum/communikate-about-me",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "Name": "",
+          "I live in...": "",
+          "Birthday...": "",
+          "age...": "",
+          "I live with...": "",
+          "pet.. ": "",
+          "School college...": "",
+          "email..": "",
+          "work...": "",
+          "communication aid..": "",
+          "music..": "",
+          "film..": "",
+          "hobby..": "",
+          "tv...": "",
+          "disability...": "",
+          "mobile...": "",
+          "About You": ""
+        }
       }
     },
     "1_250": {
@@ -7625,6 +7929,30 @@
         "private": false,
         "key": "kate-mccallum/communikate-wml",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "cool": "",
+          "Are you ignoring me?": "",
+          "Leave me alone": "",
+          "Lucky": "",
+          "Chill out": "",
+          "Go away": "",
+          "loser": "",
+          "wow": "",
+          "minga": "",
+          "Your doing my head in": "",
+          "Whatever": "",
+          "No way": "",
+          "Shut up": "",
+          "Where you put on this earth to annoy me?": "",
+          "don't": "",
+          "not": "",
+          "well": "",
+          "burp!": "",
+          "fart!": ""
+        }
       }
     },
     "1_251": {
@@ -7689,7 +8017,8 @@
         "private": false,
         "key": "kate-mccallum/communikate-my-stories",
         "word_suggestions": false
-      }
+      },
+      "strings": { "he": { "Top Page": "" } }
     },
     "1_252": {
       "format": "open-board-0.1",
@@ -8122,6 +8451,28 @@
         "private": false,
         "key": "kate-mccallum/communikate-breakfast",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "breakfast": "",
+          "cereal": "",
+          "porridge": "",
+          "bran flakes": "",
+          "toast": "",
+          "butter": "",
+          "croissant": "",
+          "jam": "",
+          "muesli": "",
+          "boiled egg": "",
+          "fried egg": "",
+          "scrambled egg": "",
+          "bagel": "",
+          "full English": "",
+          "beans": "",
+          "fruit": "",
+          "pancakes": ""
+        }
       }
     },
     "1_253": {
@@ -8539,6 +8890,27 @@
         "private": false,
         "key": "kate-mccallum/communikate-lunch",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "lunch": "",
+          "sandwich": "",
+          "crackers": "",
+          "tuna": "",
+          "cheese": "",
+          "ham": "",
+          "chicken": "",
+          "cheese on toast": "",
+          "beans on toast": "",
+          "soup": "",
+          "chicken soup": "",
+          "tomato soup": "",
+          "salad": "",
+          "carrot soup": "",
+          "mushroom soup": "",
+          "vegetable soup": ""
+        }
       }
     },
     "1_254": {
@@ -8935,6 +9307,26 @@
         "private": false,
         "key": "kate-mccallum/communikate-meals",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "meal": "",
+          "pasty": "",
+          "spaghetti": "",
+          "pasta": "",
+          "stew": "",
+          "pizza": "",
+          "roast dinner": "",
+          "chinese food": "",
+          "curry": "",
+          "rice": "",
+          "noodles": "",
+          "pie": "",
+          "lasagna": "",
+          "ravioli": "",
+          "macaroni cheese": ""
+        }
       }
     },
     "1_255": {
@@ -9308,6 +9700,25 @@
         "private": false,
         "key": "kate-mccallum/communikate-meat",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "meat": "",
+          "bacon": "",
+          "beef": "",
+          "tuna": "",
+          "lamb": "",
+          "ham": "",
+          "chicken": "",
+          "pork chop": "",
+          "meatballs": "",
+          "fish": "",
+          "mince": "",
+          "prawn": "",
+          "fish fingers": "",
+          "sausages": ""
+        }
       }
     },
     "1_256": {
@@ -9772,6 +10183,29 @@
         "private": false,
         "key": "kate-mccallum/communikate-vegetables",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "Vegetable": "",
+          "Potato": "",
+          "aubergine": "",
+          "Broccoli": "",
+          "butternut squash": "",
+          "cabbage": "",
+          "cauliflower": "",
+          "courgette": "",
+          "carrot": "",
+          "leek": "",
+          "asparagus": "",
+          "peas": "",
+          "onion": "",
+          "green beans": "",
+          "pumpkin": "",
+          "mushroom": "",
+          "turnip": "",
+          "sweetcorn": ""
+        }
       }
     },
     "1_257": {
@@ -10250,6 +10684,30 @@
         "private": false,
         "key": "kate-mccallum/communikate-fruit",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "fruit": "",
+          "apple": "",
+          "banana": "",
+          "avocado": "",
+          "cranberries": "",
+          "grapefruit": "",
+          "grapes": "",
+          "lime": "",
+          "lemon": "",
+          "melon": "",
+          "mango": "",
+          "orange": "",
+          "plum": "",
+          "pineapple": "",
+          "pear": "",
+          "strawberry": "",
+          "kiwi": "",
+          "cherry": "",
+          "blackberry": ""
+        }
       }
     },
     "1_258": {
@@ -10687,6 +11145,26 @@
         "private": false,
         "key": "kate-mccallum/communikate-drinks",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "drink": "",
+          "coffee": "",
+          "tea": "",
+          "hot chocolate": "",
+          "drinks describe": "",
+          "milk": "",
+          "water": "",
+          "Juice": "",
+          "smoothie": "",
+          "milkshake": "",
+          "fizzy drinks": "",
+          "alcohol": "",
+          "some": "",
+          "with": "",
+          "and": ""
+        }
       }
     },
     "1_259": {
@@ -10993,6 +11471,22 @@
         "private": false,
         "key": "kate-mccallum/communikate-fast-food",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "fast food": "",
+          "chips": "",
+          "chicken nuggets": "",
+          "burger": "",
+          "hot dog": "",
+          "pizza": "",
+          "Fish and chips": "",
+          "fish burger": "",
+          "cheese burger": "",
+          "sweets": "",
+          "candy floss": ""
+        }
       }
     },
     "1_260": {
@@ -11438,6 +11932,27 @@
         "private": false,
         "key": "kate-mccallum/communikate-snack",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "snack": "",
+          "raisin": "",
+          "ice lolly": "",
+          "cake": "",
+          "custard": "",
+          "cream": "",
+          "Fruit": "",
+          "yoghrt": "",
+          "crisps": "",
+          "sweets": "",
+          "candy floss": "",
+          "pie": "",
+          "chocolate": "",
+          "ice cream": "",
+          "cup cake": "",
+          "rice cake": ""
+        }
       }
     },
     "1_261": {
@@ -11768,6 +12283,23 @@
         "private": false,
         "key": "kate-mccallum/communikate-sauces",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "tomato sauce": "",
+          "mayonnaise": "",
+          "peanut butter": "",
+          "pepper": "",
+          "salt": "",
+          "gravy": "",
+          "sugar": "",
+          "jam": "",
+          "brown sauce": "",
+          "vinegar": "",
+          "spices": "",
+          "honey": ""
+        }
       }
     },
     "1_262": {
@@ -12075,6 +12607,22 @@
         "private": false,
         "key": "kate-mccallum/communikate-salad",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "salad": "",
+          "olives": "",
+          "tomato": "",
+          "spring onion": "",
+          "celery": "",
+          "cucumber": "",
+          "pepper": "",
+          "radish": "",
+          "lettuce": "",
+          "beetroot": "",
+          "chili  pepper": ""
+        }
       }
     },
     "1_263": {
@@ -12437,6 +12985,24 @@
         "private": false,
         "key": "kate-mccallum/communikate-cooking-words",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "bake": "",
+          "cook": "",
+          "chop": "",
+          "grate": "",
+          "stir": "",
+          "peel": "",
+          "pour": "",
+          "blend": "",
+          "fry": "",
+          "measure": "",
+          "it": "",
+          "Kitchen Equipment": "",
+          "don't burn it!": ""
+        }
       }
     },
     "1_264": {
@@ -12864,6 +13430,27 @@
         "private": false,
         "key": "kate-mccallum/communikate-food-chat",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "I like it": "",
+          "It's grose": "",
+          "It's spicy": "",
+          "Cut up food": "",
+          "Can I have some more?": "",
+          "Can I have a drink?": "",
+          "wipe my face": "",
+          "please": "",
+          "thank you": "",
+          "What's for dinner?": "",
+          "What have you been doing?": "",
+          "I've had enough": "",
+          "eat": "",
+          "drink": "",
+          "It's too hot": "",
+          "It's too cold": ""
+        }
       }
     },
     "1_265": {
@@ -12951,7 +13538,8 @@
         "private": false,
         "key": "kate-mccallum/communikate-friends",
         "word_suggestions": false
-      }
+      },
+      "strings": { "he": { "Top Page": "", "friends": "" } }
     },
     "1_266": {
       "format": "open-board-0.1",
@@ -13038,7 +13626,8 @@
         "private": false,
         "key": "kate-mccallum/communikate-school-college-work-mates",
         "word_suggestions": false
-      }
+      },
+      "strings": { "he": { "Top Page": "", "School/college/work mates": "" } }
     },
     "1_267": {
       "format": "open-board-0.1",
@@ -13125,7 +13714,8 @@
         "private": false,
         "key": "kate-mccallum/communikate-support-staff",
         "word_suggestions": false
-      }
+      },
+      "strings": { "he": { "Top Page": "", "Support staff": "" } }
     },
     "1_268": {
       "format": "open-board-0.1",
@@ -13212,7 +13802,8 @@
         "private": false,
         "key": "kate-mccallum/communikate-education-staff",
         "word_suggestions": false
-      }
+      },
+      "strings": { "he": { "Top Page": "", "Educational staff": "" } }
     },
     "1_269": {
       "format": "open-board-0.1",
@@ -13633,6 +14224,27 @@
         "private": false,
         "key": "kate-mccallum/communikate-job",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "Job": "",
+          "driver": "",
+          "PA": "",
+          "cleaner": "",
+          "Doctor": "",
+          "SLT": "",
+          "dentist": "",
+          "nurse": "",
+          "police officer": "",
+          "post person": "",
+          "pilot": "",
+          "handy person": "",
+          "OT": "",
+          "physio": "",
+          "mechanic": "",
+          "caretaker": ""
+        }
       }
     },
     "1_270": {
@@ -13940,6 +14552,22 @@
         "private": false,
         "key": "kate-mccallum/communikate-family",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "Dad": "",
+          "Mum": "",
+          "lady": "",
+          "man": "",
+          "Family": "",
+          "brother": "",
+          "sister": "",
+          "baby": "",
+          "child": "",
+          "Grandad": "",
+          "Grandma": ""
+        }
       }
     },
     "1_271": {
@@ -14328,6 +14956,25 @@
         "private": false,
         "key": "kate-mccallum/communikate-health",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "Body Parts": "",
+          "I feel": "",
+          "headache": "",
+          "ouch": "",
+          "chest pain": "",
+          "earache": "",
+          "sick": "",
+          "toothache": "",
+          "back pain": "",
+          "a cold": "",
+          "itch": "",
+          "stomach ache": "",
+          "a sore throat": "",
+          "cramp": ""
+        }
       }
     },
     "1_272": {
@@ -14815,6 +15462,30 @@
         "private": false,
         "key": "kate-mccallum/communikate-parts",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "body": "",
+          "hand": "",
+          "head": "",
+          "finger": "",
+          "chest": "",
+          "ear": "",
+          "face": "",
+          "hair": "",
+          "mouth": "",
+          "back": "",
+          "nose": "",
+          "arm": "",
+          "foot": "",
+          "eye": "",
+          "stomach": "",
+          "neck": "",
+          "leg": "",
+          "toes": "",
+          "Private Parts": ""
+        }
       }
     },
     "1_273": {
@@ -15254,6 +15925,28 @@
         "private": false,
         "key": "kate-mccallum/communikate-things-that-help",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "disabilities": "",
+          "communication book": "",
+          "communication aid": "",
+          "touch screen": "",
+          "wheelchair": "",
+          "power wheelchair": "",
+          "communication aid mount": "",
+          "switch mount": "",
+          "switch": "",
+          "hoist": "",
+          "hearing aid": "",
+          "glasses": "",
+          "medicine": "",
+          "appointment": "",
+          "Toilet chair": "",
+          "ecu": "",
+          "charger": ""
+        }
       }
     },
     "1_274": {
@@ -15734,6 +16427,30 @@
         "private": false,
         "key": "kate-mccallum/communikate-toiletries",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "toiletries": "",
+          "soap": "",
+          "toothbrush": "",
+          "toothpaste": "",
+          "bubble bath": "",
+          "deodorant": "",
+          "shampoo": "",
+          "conditioner": "",
+          "Make-up": "",
+          "razor": "",
+          "shaving foam": "",
+          "aftershave": "",
+          "toilet paper": "",
+          "sanitary items": "",
+          "hairdryer": "",
+          "comb": "",
+          "brush": "",
+          "hair spray": "",
+          "hair dye": ""
+        }
       }
     },
     "1_275": {
@@ -16086,6 +16803,24 @@
         "private": false,
         "key": "kate-mccallum/communikate-position-words",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "up": "",
+          "down": "",
+          "in": "",
+          "out": "",
+          "here": "",
+          "there": "",
+          "on": "",
+          "off": "",
+          "middle": "",
+          "top": "",
+          "bottom": "",
+          "under": "",
+          "over": ""
+        }
       }
     },
     "1_276": {
@@ -16510,6 +17245,28 @@
         "private": false,
         "key": "kate-mccallum/communikate-spelling",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "a": "",
+          "b": "",
+          "c": "",
+          "d": "",
+          "e": "",
+          "f": "",
+          "g": "",
+          "h": "",
+          "More Spelling": "",
+          "i": "",
+          "j": "",
+          "k": "",
+          "l": "",
+          "m": "",
+          " ": "",
+          "shift": "",
+          "?": ""
+        }
       }
     },
     "1_277": {
@@ -16849,6 +17606,23 @@
         "private": false,
         "key": "kate-mccallum/communikate-numbers",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "0": "",
+          "1": "",
+          "2": "",
+          "3": "",
+          "4": "",
+          "5": "",
+          "6": "",
+          "7": "",
+          "8": "",
+          "9": "",
+          "10": "",
+          "Top Page": "",
+          "number": ""
+        }
       }
     },
     "1_278": {
@@ -17348,6 +18122,30 @@
         "private": false,
         "key": "kate-mccallum/communikate-more-action-words",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "feel": "",
+          "read": "",
+          "sit": "",
+          "stand": "",
+          "wait": "",
+          "watch": "",
+          "work": "",
+          "have": "",
+          "know": "",
+          "play": "",
+          "sing": "",
+          "sleep": "",
+          "talk": "",
+          "try": "",
+          "win": "",
+          "lose": "",
+          "finish": "",
+          "need": "",
+          "More Action Words": ""
+        }
       }
     },
     "1_279": {
@@ -17832,6 +18630,30 @@
         "private": false,
         "key": "kate-mccallum/communikate-feelings",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "feeling": "",
+          "afraid": "",
+          "safe": "",
+          "busy": "",
+          "It is": "",
+          "bored": "",
+          "funny": "",
+          "good": "",
+          "happy": "",
+          "I am": "",
+          "tired": "",
+          "angry": "",
+          "sad": "",
+          "sick": "",
+          "hot": "",
+          "cold": "",
+          "bad": "",
+          "scared": "",
+          "confused": ""
+        }
       }
     },
     "1_280": {
@@ -18255,6 +19077,27 @@
         "private": false,
         "key": "kate-mccallum/communikate-colour",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "colour": "",
+          "white": "",
+          "black": "",
+          "red": "",
+          "light": "",
+          "yellow": "",
+          "orange": "",
+          "green": "",
+          "blue": "",
+          "dark": "",
+          "purple": "",
+          "pink": "",
+          "brown": "",
+          "gold": "",
+          "spotted": "",
+          "silver": ""
+        }
       }
     },
     "1_281": {
@@ -18678,6 +19521,27 @@
         "private": false,
         "key": "kate-mccallum/communikate-shapes",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "shape": "",
+          "star": "",
+          "triangle": "",
+          "square": "",
+          "rectangle": "",
+          "circle": "",
+          "hexagon": "",
+          "pentagon": "",
+          "oval": "",
+          "diamond": "",
+          "heart": "",
+          "line": "",
+          "curve": "",
+          "sphere": "",
+          "cube": "",
+          "cylinder": ""
+        }
       }
     },
     "1_282": {
@@ -19156,6 +20020,30 @@
         "private": false,
         "key": "kate-mccallum/communikate-opposites",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "dry": "",
+          "wet": "",
+          "long": "",
+          "short": "",
+          "all gone": "",
+          "fast": "",
+          "slow": "",
+          "loud": "",
+          "quiet": "",
+          "medium": "",
+          "big": "",
+          "little": "",
+          "new": "",
+          "old": "",
+          "soft": "",
+          "easy": "",
+          "hard": "",
+          "clean": "",
+          "dirty": ""
+        }
       }
     },
     "1_283": {
@@ -19535,6 +20423,25 @@
         "private": false,
         "key": "kate-mccallum/communikate-common-things",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "thing": "",
+          "bag": "",
+          "battery": "",
+          "candle": "",
+          "fire": "",
+          "book": "",
+          "iPad": "",
+          "camera": "",
+          "stuff": "",
+          "part": "",
+          "lot": "",
+          "idea": "",
+          "problem": "",
+          "charger": ""
+        }
       }
     },
     "1_284": {
@@ -19920,6 +20827,25 @@
         "private": false,
         "key": "kate-mccallum/communikate-art-things",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "art": "",
+          "paint": "",
+          "glitter": "",
+          "sponge": "",
+          "tape": "",
+          "eraser": "",
+          "glue": "",
+          "paintbrush": "",
+          "paper": "",
+          "pen": "",
+          "pencil": "",
+          "scissors": "",
+          "wrapping paper": "",
+          "Materials": ""
+        }
       }
     },
     "1_285": {
@@ -20408,6 +21334,30 @@
         "private": false,
         "key": "kate-mccallum/communikate-clothes",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "jeans": "",
+          "trousers": "",
+          "t-shirt": "",
+          "jumper": "",
+          "colours": "",
+          "skirt": "",
+          "dress": "",
+          "swimming things": "",
+          "bra": "",
+          "hat": "",
+          "coat": "",
+          "shoes": "",
+          "socks": "",
+          "gloves": "",
+          "dressing gown": "",
+          "pyjamas": "",
+          "slippers": "",
+          "boxer shorts": "",
+          "pants": ""
+        }
       }
     },
     "1_286": {
@@ -20808,6 +21758,26 @@
         "private": false,
         "key": "kate-mccallum/communikate-computer",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "computer": "",
+          "mouse": "",
+          "keyboard": "",
+          "USB stick": "",
+          "printer": "",
+          "email": "",
+          "iphone": "",
+          "monitor": "",
+          "website": "",
+          "ipod": "",
+          "speakers": "",
+          "joystick": "",
+          "touch screen": "",
+          "extension lead": "",
+          "charger": ""
+        }
       }
     },
     "1_287": {
@@ -21290,6 +22260,30 @@
         "private": false,
         "key": "kate-mccallum/communikate-furniture",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "furniture": "",
+          "bean bag": "",
+          "table ": "",
+          "pillow": "",
+          "wardrobe": "",
+          "toilet": "",
+          "TV": "",
+          "shelf": "",
+          "bed": "",
+          "cupboard": "",
+          "sink": "",
+          "drawer": "",
+          "couch": "",
+          "picture": "",
+          "blanket": "",
+          "bath": "",
+          "lamp": "",
+          "chair": "",
+          "sheets": ""
+        }
       }
     },
     "1_288": {
@@ -21730,6 +22724,28 @@
         "private": false,
         "key": "kate-mccallum/communikate-toys",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "toys": "",
+          "trains": "",
+          "cars": "",
+          "dolls": "",
+          "bricks": "",
+          "lego": "",
+          "paint": "",
+          "stacker ring": "",
+          "colouring book": "",
+          "book": "",
+          "sticker book": "",
+          "kite": "",
+          "teddy": "",
+          "puppet": "",
+          "shape puzzle": "",
+          "jigsaw": "",
+          "toybox": ""
+        }
       }
     },
     "1_289": {
@@ -22186,6 +23202,29 @@
         "private": false,
         "key": "kate-mccallum/communikate-kitchen-equipment",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "spoon": "",
+          "knife": "",
+          "fork": "",
+          "pan": "",
+          "bowl": "",
+          "dish cloth": "",
+          "tea towel": "",
+          "apron": "",
+          "sink": "",
+          "fridge": "",
+          "frying pan": "",
+          "plate": "",
+          "cooker": "",
+          "measuring jug": "",
+          "cup": "",
+          "chopping board": "",
+          "colander": "",
+          "grater": ""
+        }
       }
     },
     "1_290": {
@@ -22338,6 +23377,9 @@
         "private": false,
         "key": "kate-mccallum/communikate-money",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": { "Top Page": "", "money": "", "cheque book": "", "wallet": "", "purse": "" }
       }
     },
     "1_291": {
@@ -22759,6 +23801,27 @@
         "private": false,
         "key": "kate-mccallum/communikate-office",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "office": "",
+          "chair": "",
+          "filing cabinet": "",
+          "computer": "",
+          "photocopier": "",
+          "bin": "",
+          "desk": "",
+          "file": "",
+          "fax": "",
+          "pen": "",
+          "pencil": "",
+          "scissors": "",
+          "envelope": "",
+          "paper": "",
+          "paperclip": "",
+          "label": ""
+        }
       }
     },
     "1_292": {
@@ -23224,6 +24287,29 @@
         "private": false,
         "key": "kate-mccallum/communikate-sports",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "sports": "",
+          "football": "",
+          "rugby": "",
+          "cycling": "",
+          "boccia": "",
+          "motor sport": "",
+          "golf": "",
+          "fishing": "",
+          "pool": "",
+          "bowling": "",
+          "tennis": "",
+          "horse riding": "",
+          "skiing": "",
+          "dancing": "",
+          "gymnastics": "",
+          "athletics": "",
+          "outdoor sport": "",
+          "judo": ""
+        }
       }
     },
     "1_293": {
@@ -23650,6 +24736,27 @@
         "private": false,
         "key": "kate-mccallum/communikate-tools",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "tools": "",
+          "clamp": "",
+          "drill": "",
+          "torch": "",
+          "goggles": "",
+          "hammer": "",
+          "hardhat": "",
+          "drill bit": "",
+          "pliers": "",
+          "sandpaper": "",
+          "wrench": "",
+          "screwdriver": "",
+          "chisel": "",
+          "extension lead": "",
+          "screw": "",
+          "Materials": ""
+        }
       }
     },
     "1_294": {
@@ -24108,6 +25215,29 @@
         "private": false,
         "key": "kate-mccallum/communikate-transport",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "transport": "",
+          "car": "",
+          "train": "",
+          "bus": "",
+          "caravan": "",
+          "fire engine": "",
+          "ambulance": "",
+          "ship": "",
+          "airplane": "",
+          "tractor": "",
+          "lorry": "",
+          "motor home": "",
+          "bike": "",
+          "police car": "",
+          "rowing boat": "",
+          "bin lorry": "",
+          "taxi": "",
+          "underground": ""
+        }
       }
     },
     "1_295": {
@@ -24259,7 +25389,8 @@
         "private": false,
         "key": "kate-mccallum/communikate-nature",
         "word_suggestions": false
-      }
+      },
+      "strings": { "he": { "Top Page": "", "Weather": "", "Animals": "", "Gardening": "" } }
     },
     "1_296": {
       "format": "open-board-0.1",
@@ -24639,6 +25770,25 @@
         "private": false,
         "key": "kate-mccallum/communikate-days",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "day": "",
+          "week": "",
+          "weekend": "",
+          "night": "",
+          "Monday": "",
+          "Tuesday": "",
+          "Wednesday": "",
+          "Thursday": "",
+          "Friday": "",
+          "Saturday": "",
+          "Sunday": "",
+          "this week": "",
+          "next week": "",
+          "tonight": ""
+        }
       }
     },
     "1_297": {
@@ -25055,6 +26205,27 @@
         "private": false,
         "key": "kate-mccallum/communikate-months",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "month": "",
+          "this month": "",
+          "next month": "",
+          "last month": "",
+          "January": "",
+          "February": "",
+          "March": "",
+          "April": "",
+          "May": "",
+          "June": "",
+          "July": "",
+          "August": "",
+          "September": "",
+          "October": "",
+          "November": "",
+          "December": ""
+        }
       }
     },
     "1_298": {
@@ -25398,6 +26569,23 @@
         "private": false,
         "key": "kate-mccallum/communikate-special-days",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "special day": "",
+          "new year": "",
+          "valentines day": "",
+          "bank holiday": "",
+          "easter": "",
+          "birthday": "",
+          "holiday": "",
+          "wedding": "",
+          "bonfire night": "",
+          "halloween": "",
+          "Christmas": "",
+          "party": ""
+        }
       }
     },
     "1_299": {
@@ -25761,6 +26949,24 @@
         "private": false,
         "key": "kate-mccallum/communikate-shops",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "shop": "",
+          "supermarket": "",
+          "butchers": "",
+          "shopping centre": "",
+          "bakers": "",
+          "veg shop": "",
+          "department store": "",
+          "clothes shop": "",
+          "music shop": "",
+          "market": "",
+          "coffee shop": "",
+          "drive through": "",
+          "pharmacy": ""
+        }
       }
     },
     "1_300": {
@@ -26026,6 +27232,20 @@
         "private": false,
         "key": "kate-mccallum/communikate-outside",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "Outside place": "",
+          "street": "",
+          "Car park": "",
+          "beach": "",
+          "countryside": "",
+          "lake": "",
+          "woods": "",
+          "field": "",
+          "garden": ""
+        }
       }
     },
     "1_301": {
@@ -26477,6 +27697,28 @@
         "private": false,
         "key": "kate-mccallum/communikate-home",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "home": "",
+          "cellar": "",
+          "dining room": "",
+          "hall": "",
+          "attic": "",
+          "bathroom": "",
+          "lounge": "",
+          "study": "",
+          "bedroom": "",
+          "kitchen": "",
+          "my room": "",
+          "utility room": "",
+          "play room": "",
+          "upstairs": "",
+          "downstairs": "",
+          "stairs": "",
+          "office": ""
+        }
       }
     },
     "1_302": {
@@ -27063,7 +28305,8 @@
         "private": false,
         "key": "kate-mccallum/communikate-pictures",
         "word_suggestions": false
-      }
+      },
+      "strings": { "he": { "Top Page": "", "Would you like to see my photos?": "", "Picture": "" } }
     },
     "1_303": {
       "format": "open-board-0.1",
@@ -27487,6 +28730,26 @@
         "private": false,
         "key": "kate-mccallum/communikate-phone",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "Hello! I use a communication aid to speak, please give me time to generate what I need to say.": "",
+          "Chatting": "",
+          "Questions": "",
+          "call me": "",
+          "I need to check my credit.": "",
+          "People": "",
+          "speak soon": "",
+          "take care": "",
+          "I need to charge my phone": "",
+          "When will I see you?": "",
+          "Tell me your news": "",
+          "I miss you": "",
+          "Happy Birthday": "",
+          "Get well soon": "",
+          "Congratulations": ""
+        }
       }
     },
     "1_304": {
@@ -27736,6 +28999,19 @@
         "private": false,
         "key": "kate-mccallum/communikate-mp3",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "pause/play": "",
+          "My Albums": "",
+          "MP3 Volume Up": "",
+          "MP3 Volume Down": "",
+          "mute": "",
+          "shuffle": "",
+          "previous track": "",
+          "next track": ""
+        }
       }
     },
     "1_306": {
@@ -27963,6 +29239,19 @@
         "private": false,
         "key": "kate-mccallum/communikate-dvd",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "pause/play": "",
+          "My DVDs": "",
+          "dvd Volume Up": "",
+          "dvd Volume Down": "",
+          "mute": "",
+          "shuffle": "",
+          "previous track": "",
+          "next track": ""
+        }
       }
     },
     "1_307": {
@@ -28351,6 +29640,25 @@
         "private": false,
         "key": "kate-mccallum/communikate-tv",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "0": "",
+          "1": "",
+          "2": "",
+          "3": "",
+          "4": "",
+          "5": "",
+          "6": "",
+          "7": "",
+          "8": "",
+          "9": "",
+          "Top Page": "",
+          "TV on/off": "",
+          "TV volume UP": "",
+          "TV volume Down": "",
+          "mute": ""
+        }
       }
     },
     "1_308": {
@@ -28758,6 +30066,26 @@
         "private": false,
         "key": "kate-mccallum/communikate-about-you",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "What's your name?": "",
+          "Where do you live?": "",
+          "When's your birthday?": "",
+          "How old are you?": "",
+          "Who do you live with?": "",
+          "Do you have a pet?": "",
+          "Tell me about your day?": "",
+          "What's your email?": "",
+          "Where do you work?": "",
+          "What's your mobile number?": "",
+          "What music do you like?": "",
+          "What films do you like?": "",
+          "What's your hobby?": "",
+          "What TV do you like?": "",
+          "Do you have a disability?": ""
+        }
       }
     },
     "1_309": {
@@ -28954,6 +30282,17 @@
         "private": false,
         "key": "kate-mccallum/communikate-potato",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "potato": "",
+          "chips": "",
+          "mashed potato": "",
+          "baked potato": "",
+          "sweet potato": "",
+          "jacket potato": ""
+        }
       }
     },
     "1_310": {
@@ -29265,6 +30604,22 @@
         "private": false,
         "key": "kate-mccallum/communikate-pint",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "pint": "",
+          "half pint": "",
+          "straw": "",
+          "special cup": "",
+          "diet": "",
+          "sugar": "",
+          "large": "",
+          "medium": "",
+          "small": "",
+          "hot": "",
+          "cold": ""
+        }
       }
     },
     "1_311": {
@@ -29529,6 +30884,20 @@
         "private": false,
         "key": "kate-mccallum/communikate-juice",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "Juice": "",
+          "apple juice": "",
+          "orange juice": "",
+          "blackcurrent juice": "",
+          "pineapple juice": "",
+          "grape juice": "",
+          "grapefruit juice": "",
+          "cranberry juice": "",
+          "tomato juice": ""
+        }
       }
     },
     "1_312": {
@@ -29882,6 +31251,24 @@
         "private": false,
         "key": "kate-mccallum/communikate-flavour",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "flavor": "",
+          "raison": "",
+          "banana": "",
+          "fruit": "",
+          "mint": "",
+          "toffee": "",
+          "lime": "",
+          "lemon": "",
+          "chocolate": "",
+          "pineapple": "",
+          "strawberry": "",
+          "cherry": "",
+          "blackberry": ""
+        }
       }
     },
     "1_313": {
@@ -30034,6 +31421,15 @@
         "private": false,
         "key": "kate-mccallum/communikate-milkshake",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "milkshake": "",
+          "banana milkshake": "",
+          "strawberry milkshake": "",
+          "chocolate milkshake": ""
+        }
       }
     },
     "1_314": {
@@ -30187,6 +31583,9 @@
         "private": false,
         "key": "kate-mccallum/communikate-fizzy-drinks",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": { "Top Page": "", "Fizzy drink": "", "orangeade": "", "lemonade": "", "coke": "" }
       }
     },
     "1_315": {
@@ -30342,6 +31741,9 @@
         "private": false,
         "key": "kate-mccallum/communikate-alcohol",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": { "Top Page": "", "alcohol": "", "beer": "", "white wine": "", "red wine": "" }
       }
     },
     "1_316": {
@@ -30654,6 +32056,22 @@
         "private": false,
         "key": "kate-mccallum/communikate-private-parts",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "private parts": "",
+          "bottom": "",
+          "breasts": "",
+          "vagina": "",
+          "penis": "",
+          "under arm hair": "",
+          "horny": "",
+          "love": "",
+          "shared pleasure": "",
+          "self pleasure": "",
+          "kiss": ""
+        }
       }
     },
     "1_317": {
@@ -31061,6 +32479,27 @@
         "private": false,
         "key": "kate-mccallum/communikate-more-spelling",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "n": "",
+          "o": "",
+          "p": "",
+          "q": "",
+          "r": "",
+          "s": "",
+          "t": "",
+          "u": "",
+          "Spelling": "",
+          "v": "",
+          "w": "",
+          "x": "",
+          "y": "",
+          " ": "",
+          "shift": "",
+          "!": ""
+        }
       }
     },
     "1_318": {
@@ -31554,6 +32993,30 @@
         "private": false,
         "key": "kate-mccallum/communikate-more-action-words_1",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "are": "",
+          "buy": "",
+          "can": "",
+          "count": "",
+          "find": "",
+          "hear": "",
+          "hold": "",
+          "let": "",
+          "live": "",
+          "ride": "",
+          "say": "",
+          "share": "",
+          "walk": "",
+          "was": "",
+          "wash": "",
+          "write": "",
+          "break": "",
+          "ask": "",
+          "More Action Words": ""
+        }
       }
     },
     "1_319": {
@@ -31838,6 +33301,21 @@
         "private": false,
         "key": "kate-mccallum/communikate-materials",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "material": "",
+          "wood": "",
+          "plastic": "",
+          "fabric": "",
+          "metal": "",
+          "sponge": "",
+          "glass": "",
+          "stone": "",
+          "string": "",
+          "paper": ""
+        }
       }
     },
     "1_320": {
@@ -32197,6 +33675,24 @@
         "private": false,
         "key": "kate-mccallum/communikate-weather",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "Weather ": "",
+          "rain": "",
+          "sun": "",
+          "snow": "",
+          "It is": "",
+          "windy": "",
+          "cloudy": "",
+          "foggy": "",
+          "frezing": "",
+          "icey": "",
+          "stormy": "",
+          "hot": "",
+          "cold": ""
+        }
       }
     },
     "1_321": {
@@ -32462,6 +33958,18 @@
         "private": false,
         "key": "kate-mccallum/communikate-animals",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "Pets": "",
+          "Farm Animals": "",
+          "Wild Animals": "",
+          "Water Animals": "",
+          "Birds": "",
+          "Insects": "",
+          "Pet Care": ""
+        }
       }
     },
     "1_322": {
@@ -32943,6 +34451,30 @@
         "private": false,
         "key": "kate-mccallum/communikate-gardening",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "gardening": "",
+          "flowers": "",
+          "grass": "",
+          "bud": "",
+          "lawn mower": "",
+          "leaves": "",
+          "petal": "",
+          "branch": "",
+          "tree": "",
+          "hose": "",
+          "seeds": "",
+          "hedge cutters": "",
+          "plant": "",
+          "hedge": "",
+          "clippers": "",
+          "shovel": "",
+          "pot": "",
+          "rake": "",
+          "trowel": ""
+        }
       }
     },
     "1_323": {
@@ -33293,6 +34825,24 @@
         "private": false,
         "key": "kate-mccallum/communikate-christmas",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "christmas": "",
+          "christmas day": "",
+          "christmas eve": "",
+          "Father Christmas": "",
+          "Christmas pudding": "",
+          "lights": "",
+          "Christmas cake": "",
+          "Christmas sock": "",
+          "stocking": "",
+          "decorations": "",
+          "Christmas tree": "",
+          "Christmas hat": "",
+          "Christmas present": ""
+        }
       }
     },
     "1_324": {
@@ -33424,6 +34974,9 @@
         "private": false,
         "key": "kate-mccallum/communikate-picture",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": { "Top Page": "", "About this pic": "", "Previous photo": "", "Next Photo": "" }
       }
     },
     "1_325": {
@@ -33708,6 +35261,21 @@
         "private": false,
         "key": "kate-mccallum/communikate-pets",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "pet": "",
+          "cat": "",
+          "hamster": "",
+          "mouse": "",
+          "guinea pig": "",
+          "rabbit": "",
+          "horse": "",
+          "fish": "",
+          "rat": "",
+          "dog": ""
+        }
       }
     },
     "1_326": {
@@ -33932,6 +35500,18 @@
         "private": false,
         "key": "kate-mccallum/communikate-farm-animals",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "farm animal": "",
+          "pig": "",
+          "sheep": "",
+          "chick": "",
+          "chicken": "",
+          "cow": "",
+          "horse": ""
+        }
       }
     },
     "1_327": {
@@ -34329,6 +35909,26 @@
         "private": false,
         "key": "kate-mccallum/communikate-wild-animals",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "wild animal": "",
+          "zebra": "",
+          "snake": "",
+          "monkey": "",
+          "bear": "",
+          "camel": "",
+          "cheetah": "",
+          "deer": "",
+          "elephant": "",
+          "giraffe": "",
+          "gorilla": "",
+          "hippo": "",
+          "lion": "",
+          "tiger": "",
+          "rhinoceros": ""
+        }
       }
     },
     "1_328": {
@@ -34593,6 +36193,20 @@
         "private": false,
         "key": "kate-mccallum/communikate-water-animals",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "water animals": "",
+          "fish": "",
+          "whale": "",
+          "prawn": "",
+          "crab": "",
+          "dolphin": "",
+          "jellyfish": "",
+          "tropical fish": "",
+          "shark": ""
+        }
       }
     },
     "1_329": {
@@ -34878,6 +36492,21 @@
         "private": false,
         "key": "kate-mccallum/communikate-birds",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "bird": "",
+          "duck": "",
+          "parrot": "",
+          "robin": "",
+          "turkey": "",
+          "goose": "",
+          "swan": "",
+          "peacock": "",
+          "owl": "",
+          "penguin": ""
+        }
       }
     },
     "1_330": {
@@ -35096,6 +36725,18 @@
         "private": false,
         "key": "kate-mccallum/communikate-insects",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "insect": "",
+          "caterpillar": "",
+          "slug": "",
+          "snail": "",
+          "bee": "",
+          "fly": "",
+          "spider": ""
+        }
       }
     },
     "1_331": {
@@ -35582,6 +37223,30 @@
         "private": false,
         "key": "kate-mccallum/communikate-pet-care",
         "word_suggestions": false
+      },
+      "strings": {
+        "he": {
+          "Top Page": "",
+          "pet care": "",
+          "dog food": "",
+          "cat food": "",
+          "fish food": "",
+          "collar": "",
+          "pet comb": "",
+          "pet blanket": "",
+          "pet bed": "",
+          "fish tank": "",
+          "treat": "",
+          "lead": "",
+          "kennel": "",
+          "pet carrier": "",
+          "pet food": "",
+          "bird feeder": "",
+          "care for pet": "",
+          "feed pet ": "",
+          "walk the dog": "",
+          "cage": ""
+        }
       }
     }
   }
