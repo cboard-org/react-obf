@@ -262,8 +262,10 @@ class Board extends Component {
 
     if (button.actions && button.actions.length) {
       button.actions.forEach(action => this.doAction(action));
+      return;
     } else if (button.action) {
       this.doAction(button.action);
+      return;
     }
 
     if (button.load_board) {
