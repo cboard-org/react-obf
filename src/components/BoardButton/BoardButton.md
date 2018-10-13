@@ -2,6 +2,8 @@ Basic BoardButton:
 
 ```jsx
 const props = {
+  background_color: 'gray',
+  border_color: 'red',
   image: 'https://s3.amazonaws.com/opensymbols/libraries/arasaac/hello_1.png',
   label: 'Hello'
 };
