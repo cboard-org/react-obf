@@ -8,3 +8,7 @@
   color: inherit;
   fill: currentColor;
 }
+
+.ButtonBase::-moz-focus-inner {
+  border: 0;
+}
