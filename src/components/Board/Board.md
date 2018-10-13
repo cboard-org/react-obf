@@ -113,6 +113,7 @@ const handleFile = event => {
   </div>
   <Board
     board={state.board}
+    dir="ltr"
     onLoadBoard={loadBoard}
     onSpeak={speak}
     renderBoardButton={renderBoardButton}

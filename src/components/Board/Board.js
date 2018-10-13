@@ -121,6 +121,10 @@ class Board extends Component {
      */
     clearButton: PropTypes.node,
     /**
+     * Direction
+     */
+    dir: PropTypes.oneOf(['ltr', 'rtl']),
+    /**
      * Callback, fired when requesting to load board.
      * @param {Object} board
      */
@@ -183,6 +187,7 @@ class Board extends Component {
   };
 
   static defaultProps = {
+    dir: 'ltr',
     scanInterval: 1500,
     size: 'default'
   };
@@ -315,18 +320,20 @@ class Board extends Component {
   };
 
   render() {
-    const { board, scanInterval, scanning, size } = this.props;
+    const { board, dir, scanInterval, scanning, size } = this.props;
     const { grid } = board;
 
     return (
       <Scanner active={scanning} iterationInterval={scanInterval}>
         <BoardLayout
+          dir={dir}
           size={size}
           outputComponent={
             <Scannable disabled={!this.state.output.length}>
               <Output
                 backspaceButton={<Scannable>{this.renderBackspaceButton()}</Scannable>}
                 clearButton={<Scannable>{this.renderClearButton()}</Scannable>}
+                dir={dir}
                 onChange={this.changeOutput}
                 onClick={this.handleOutputClick}
                 scrollWrapper={Scannable}
