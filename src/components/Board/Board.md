@@ -1,11 +1,16 @@
 Basic Board:
 
 ```jsx
-const JSZip = require('jszip');
-
+const { readOBFFile, readOBZFile } = require('./obf-utils.js');
 const boardSet = require('../../data/communikate-20.json');
+
 const rootBoard = boardSet.boards[boardSet.root];
-const initialState = { boardSet, board: rootBoard, scanning: false };
+
+const initialState = {
+  boardSet,
+  board: rootBoard,
+  scanning: false
+};
 
 const renderBoardButton = boardButton => <BoardButton {...boardButton} />;
 
@@ -19,78 +24,21 @@ const speak = text => {
   window.speechSynthesis.speak(utterThis);
 };
 
-const parseOBZ = zip => {
-  return new Promise((resolve, reject) => {
-    const boardSet = {
-      boards: {},
-      root: ''
-    };
-
-    let count = 0;
-
-    zip.forEach((relativePath, zipEntry) => {
-      count++;
-
-      zip
-        .file(relativePath)
-        .async('string')
-        .then(data => {
-          if (relativePath.includes('obf')) {
-            const parsedData = JSON.parse(data);
-            boardSet.boards[relativePath] = parsedData;
-          }
-
-          if (relativePath.includes('manifest')) {
-            const parsedData = JSON.parse(data);
-            boardSet.root = parsedData.root;
-          }
-
-          if (!--count) {
-            resolve(boardSet);
-          }
-        });
-    });
-  });
-};
-
-const readOBZ = file => {
-  const reader = new FileReader();
-
-  reader.onload = event => {
-    var base64result = event.target.result.split(',')[1];
-
-    JSZip.loadAsync(file, { base64: true })
-      .then(parseOBZ)
-      .then(boardSet => {
-        const board = boardSet.boards[boardSet.root];
-        setState({ board, boardSet: boardSet });
-      });
-  };
-
-  reader.readAsDataURL(file);
-};
-
-const readOBF = file => {
-  const reader = new FileReader();
-
-  reader.onload = event => {
-    const board = JSON.parse(event.target.result);
-    setState({ board });
-  };
-
-  reader.readAsText(file);
-};
-
-const handleFile = event => {
+const handleFileUpload = event => {
   const file = event.target.files[0];
   const fileExtension = file.name.split('.')[1];
 
   switch (fileExtension) {
     case 'obf':
-      readOBF(file);
+      readOBFFile(file).then(board => {
+        setState({ board });
+      });
       break;
     case 'obz':
-      readOBZ(file);
+      readOBZFile(file).then(boardSet => {
+        const board = boardSet.boards[boardSet.root];
+        setState({ board, boardSet });
+      });
       break;
     default:
     // no default
@@ -109,8 +57,9 @@ const handleFile = event => {
         Scan
       </button>
     ) : null}
-    <input type="file" onChange={handleFile} accept=".obf, .obz" />
+    <input type="file" onChange={handleFileUpload} accept=".obf, .obz" />
   </div>
+
   <Board
     board={state.board}
     dir="ltr"
