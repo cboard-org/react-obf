@@ -28,6 +28,10 @@
   opacity: 0;
 }
 
+.BoardButton:hover::after {
+  opacity: 0.8;
+}
+
 .BoardButton:active::after {
   opacity: 1;
 }
