@@ -5,7 +5,8 @@
   transition: background-color 0.25s;
 }
 
-.BackspaceButton:hover {
+.BackspaceButton:hover,
+.BackspaceButton:focus {
   background: rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
