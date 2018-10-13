@@ -65,6 +65,7 @@ class Example extends Component {
 | [`backspaceButton`](#backspaceButtonProp)     | Object   |          | Component to render output backspace button.                                                  |
 | [`board`](#boardProp)                         | Object   | ✓        | Board to display, needs to be [Open Board Format](http://www.openboardformat.org/) compliant. |
 | [`clearButton`](#clearButtonProp)             | Object   |          | Component to render output clear button.                                                      |
+| [`dir`](#dirProp)                             | String   |          | Board direction, one of: `ltr`, `rtl`.                                                        |
 | [`onLoadBoard`](#onLoadBoardProp)             | Function |          | Callback, fired when requesting to load board.                                                |
 | [`onOutputChange`](#onOutputChangeProp)       | Function |          | Callback, fired when output changes.                                                          |
 | [`onPlaySound`](#onPlaySoundProp)             | Function |          | Callback, fired when requesting to play sound.                                                |
@@ -86,6 +87,10 @@ class Example extends Component {
 <a name="clearButtonProp"></a>
 
 #### clearButton (optional)
+
+<a name="dirProp"></a>
+
+#### dir (optional)
 
 <a name="onLoadBoardProp"></a>
 

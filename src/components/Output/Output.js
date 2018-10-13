@@ -17,6 +17,10 @@ class Output extends PureComponent {
      */
     clearButton: PropTypes.node,
     /**
+     * Direction
+     */
+    dir: PropTypes.oneOf(['ltr', 'rtl']),
+    /**
      * Callback fired on output clear / backspace
      */
     onChange: PropTypes.func,
@@ -92,14 +96,14 @@ class Output extends PureComponent {
   }
 
   render() {
-    const { className, onClick, scrollWrapper: ScrollWrapper, symbols } = this.props;
+    const { className, dir, onClick, scrollWrapper: ScrollWrapper, symbols } = this.props;
 
     const outputClassName = classNames('Output', className);
 
     return (
       <div className={outputClassName}>
         <ScrollWrapper>
-          <Scroll onClick={onClick}>
+          <Scroll onClick={onClick} dir={dir}>
             {symbols.map(({ image, label }, index) => (
               <div className="Output__value" key={index}>
                 <Symbol label={label} src={image} />

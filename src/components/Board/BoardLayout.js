@@ -14,6 +14,10 @@ const FontSizes = {
  */
 class BoardLayout extends PureComponent {
   static propTypes = {
+    /**
+     * Direction
+     */
+    dir: PropTypes.oneOf(['ltr', 'rtl']),
     gridComponent: PropTypes.node,
     navbarComponent: PropTypes.node,
     outputComponent: PropTypes.node,
@@ -25,12 +29,12 @@ class BoardLayout extends PureComponent {
   }
 
   render() {
-    const { gridComponent, navbarComponent, outputComponent, size } = this.props;
+    const { dir, gridComponent, navbarComponent, outputComponent, size } = this.props;
 
     const boardStyle = { fontSize: this.getFontSize(size) };
 
     return (
-      <div className="Board" style={boardStyle}>
+      <div className="Board" dir={dir} style={boardStyle}>
         <div className="Board__output">{outputComponent}</div>
         <div className="Board__main">
           <div className="Board__navbar">{navbarComponent}</div>
