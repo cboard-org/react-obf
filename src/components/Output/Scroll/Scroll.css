@@ -4,6 +4,7 @@
   height: 100%;
   overflow-x: auto;
   overflow-y: hidden;
+  outline: 0;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -14,6 +15,12 @@
   display: flex;
   align-items: center;
   outline: 0;
+  transition: background-color 0.25s;
+}
+
+.Scroll__container:not(:empty):focus,
+.Scroll__container:not(:empty):hover {
+  background: rgba(0, 0, 0, 0.15);
 }
 
 .Scroll__container:not(:empty) {
