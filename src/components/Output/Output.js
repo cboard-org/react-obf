@@ -2,6 +2,8 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
+import BackspaceButton from '../BackspaceButton/BackspaceButton';
+import ClearButton from '../ClearButton/ClearButton';
 import Scroll from './Scroll/Scroll';
 import './Output.css';
 
@@ -39,7 +41,7 @@ class Output extends PureComponent {
     /**
      *
      */
-    scrollWrapper: PropTypes.func,
+    interactiveWrapper: PropTypes.func,
     /**
      * Value to output
      */
@@ -87,6 +89,8 @@ class Output extends PureComponent {
       case KeyCodes.space:
         onClick && onClick();
         break;
+      default:
+      // no default
     }
   };
 
@@ -99,32 +103,36 @@ class Output extends PureComponent {
       visibility: disabled ? 'hidden' : 'visible'
     };
 
-    return clearButton
-      ? React.cloneElement(clearButton, {
-          disabled,
-          style,
-          onClick: this.handleClear
-        })
-      : null;
+    const props = {
+      disabled,
+      style,
+      onClick: this.handleClear
+    };
+
+    return clearButton ? React.cloneElement(clearButton, props) : <ClearButton {...props} />;
   }
 
   renderBackspaceButton() {
     const { backspaceButton } = this.props;
 
-    return backspaceButton
-      ? React.cloneElement(backspaceButton, {
-          onClick: this.handleBackspace
-        })
-      : null;
+    const props = {
+      onClick: this.handleBackspace
+    };
+
+    return backspaceButton ? (
+      React.cloneElement(backspaceButton, props)
+    ) : (
+      <BackspaceButton {...props} />
+    );
   }
 
   render() {
     const {
       className,
       dir,
+      interactiveWrapper: InteractiveWrapper,
       onClick,
       renderValue,
-      scrollWrapper: ScrollWrapper,
       values
     } = this.props;
 
@@ -134,7 +142,7 @@ class Output extends PureComponent {
 
     return (
       <div className={outputClassName}>
-        <ScrollWrapper>
+        <InteractiveWrapper>
           <Scroll
             dir={dir}
             onClick={onClick}
@@ -148,9 +156,13 @@ class Output extends PureComponent {
               </div>
             ))}
           </Scroll>
-        </ScrollWrapper>
-        <div className="Output__button">{this.renderClearButton()}</div>
-        <div className="Output__button">{this.renderBackspaceButton()}</div>
+        </InteractiveWrapper>
+        <div className="Output__button">
+          <InteractiveWrapper>{this.renderClearButton()}</InteractiveWrapper>
+        </div>
+        <div className="Output__button">
+          <InteractiveWrapper>{this.renderBackspaceButton()}</InteractiveWrapper>
+        </div>
       </div>
     );
   }
