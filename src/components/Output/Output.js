@@ -2,9 +2,13 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-import Symbol from '../Symbol/Symbol';
 import Scroll from './Scroll/Scroll';
 import './Output.css';
+
+const KeyCodes = {
+  enter: 13,
+  space: 32
+};
 
 class Output extends PureComponent {
   static propTypes = {
@@ -17,33 +21,34 @@ class Output extends PureComponent {
      */
     clearButton: PropTypes.node,
     /**
-     * Direction
+     * Text direction
      */
     dir: PropTypes.oneOf(['ltr', 'rtl']),
     /**
-     * Callback fired on output clear / backspace
+     * Callback, fired when output changes
      */
     onChange: PropTypes.func,
     /**
-     * Symbols to output
+     * Callback, fired when output is clicked
      */
-    symbols: PropTypes.arrayOf(
-      PropTypes.shape({
-        /**
-         * Image src to display
-         */
-        image: PropTypes.string,
-        /**
-         * Label to display
-         */
-        label: PropTypes.oneOfType([PropTypes.string, PropTypes.node])
-      })
-    )
+    onClick: PropTypes.func,
+    /**
+     * Render value
+     */
+    renderValue: PropTypes.func,
+    /**
+     *
+     */
+    scrollWrapper: PropTypes.func,
+    /**
+     * Value to output
+     */
+    values: PropTypes.array
   };
 
   static defaultProps = {
     scrollWrapper: props => props.children,
-    symbols: []
+    values: []
   };
 
   outputClear() {
@@ -53,8 +58,8 @@ class Output extends PureComponent {
   }
 
   outputPop() {
-    const { onChange, symbols } = this.props;
-    const output = [...symbols];
+    const { onChange, values } = this.props;
+    const output = [...values];
     output.pop();
     onChange(output);
   }
@@ -67,10 +72,28 @@ class Output extends PureComponent {
     this.outputClear();
   };
 
-  renderClearButton() {
-    const { clearButton, symbols } = this.props;
+  handleKeyDown = event => {
+    if (event.keyCode === KeyCodes.space) {
+      event.preventDefault();
+    }
+  };
 
-    const disabled = !symbols.length;
+  handleKeyUp = event => {
+    const { onClick } = this.props;
+
+    switch (event.keyCode) {
+      // fall through
+      case KeyCodes.enter:
+      case KeyCodes.space:
+        onClick && onClick();
+        break;
+    }
+  };
+
+  renderClearButton() {
+    const { clearButton, values } = this.props;
+
+    const disabled = !values.length;
 
     const style = {
       visibility: disabled ? 'hidden' : 'visible'
@@ -96,17 +119,32 @@ class Output extends PureComponent {
   }
 
   render() {
-    const { className, dir, onClick, scrollWrapper: ScrollWrapper, symbols } = this.props;
+    const {
+      className,
+      dir,
+      onClick,
+      renderValue,
+      scrollWrapper: ScrollWrapper,
+      values
+    } = this.props;
 
     const outputClassName = classNames('Output', className);
+
+    const tabIndex = values.length ? '0' : '-1';
 
     return (
       <div className={outputClassName}>
         <ScrollWrapper>
-          <Scroll onClick={onClick} dir={dir}>
-            {symbols.map(({ image, label }, index) => (
+          <Scroll
+            dir={dir}
+            onClick={onClick}
+            onKeyDown={this.handleKeyDown}
+            onKeyUp={this.handleKeyUp}
+            tabIndex={tabIndex}
+          >
+            {values.map((value, index) => (
               <div className="Output__value" key={index}>
-                <Symbol label={label} src={image} />
+                {renderValue(value)}
               </div>
             ))}
           </Scroll>

@@ -15,7 +15,7 @@ const FontSizes = {
 class BoardLayout extends PureComponent {
   static propTypes = {
     /**
-     * Direction
+     * Text direction
      */
     dir: PropTypes.oneOf(['ltr', 'rtl']),
     gridComponent: PropTypes.node,

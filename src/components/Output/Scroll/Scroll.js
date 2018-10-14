@@ -9,7 +9,7 @@ const invertDir = dir => (dir === 'rtl' ? 'ltr' : 'rtl');
 export class Scroll extends PureComponent {
   static propTypes = {
     /**
-     * Direction
+     * Text direction
      */
     dir: PropTypes.oneOf(['ltr', 'rtl'])
   };
@@ -37,14 +37,14 @@ export class Scroll extends PureComponent {
   }
 
   render() {
-    const { children, className, dir, style, ...other } = this.props;
+    const { children, className, dir, style, tabIndex, ...other } = this.props;
 
     const scrollClassName = classNames('Scroll', className);
     const scrollStyle = { direction: invertDir(dir) };
 
     return (
       <div className={scrollClassName} style={scrollStyle} {...other} ref={this.scrollRef}>
-        <div className="Scroll__container" style={{ ...style, direction: dir }}>
+        <div className="Scroll__container" style={{ ...style, direction: dir }} tabIndex={tabIndex}>
           {children}
         </div>
       </div>

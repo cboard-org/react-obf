@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { SizeMe } from 'react-sizeme';
 
+import BackspaceButton from '../BackspaceButton/BackspaceButton';
+import ClearButton from '../ClearButton/ClearButton';
+import Symbol from '../Symbol/Symbol';
 import Bar from '../Bar/Bar';
 import Grid from '../Grid/Grid';
 import Output from '../Output/Output';
-import BackspaceButton from '../BackspaceButton/BackspaceButton';
-import ClearButton from '../ClearButton/ClearButton';
 
 import { ButtonActions } from './constants';
 import BoardLayout from './BoardLayout';
@@ -121,7 +122,7 @@ class Board extends Component {
      */
     clearButton: PropTypes.node,
     /**
-     * Direction
+     * Text direction
      */
     dir: PropTypes.oneOf(['ltr', 'rtl']),
     /**
@@ -319,6 +320,8 @@ class Board extends Component {
     );
   };
 
+  renderSymbol = ({ label, image }) => <Symbol label={label} src={image} />;
+
   render() {
     const { board, dir, scanInterval, scanning, size } = this.props;
     const { grid } = board;
@@ -336,8 +339,9 @@ class Board extends Component {
                 dir={dir}
                 onChange={this.changeOutput}
                 onClick={this.handleOutputClick}
+                renderValue={this.renderSymbol}
                 scrollWrapper={Scannable}
-                symbols={this.state.output}
+                values={this.state.output}
               />
             </Scannable>
           }
