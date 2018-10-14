@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { SizeMe } from 'react-sizeme';
 
-import BackspaceButton from '../BackspaceButton/BackspaceButton';
-import ClearButton from '../ClearButton/ClearButton';
 import Symbol from '../Symbol/Symbol';
 import Bar from '../Bar/Bar';
 import Grid from '../Grid/Grid';
@@ -302,10 +300,6 @@ class Board extends Component {
     onSpeak && onSpeak(text);
   };
 
-  renderBackspaceButton = () => this.props.backspaceButton || <BackspaceButton />;
-
-  renderClearButton = () => this.props.clearButton || <ClearButton />;
-
   renderBoardButton = button => {
     const { renderBoardButton } = this.props;
 
@@ -323,7 +317,7 @@ class Board extends Component {
   renderSymbol = ({ label, image }) => <Symbol label={label} src={image} />;
 
   render() {
-    const { board, dir, scanInterval, scanning, size } = this.props;
+    const { backspaceButton, board, clearButton, dir, scanInterval, scanning, size } = this.props;
     const { grid } = board;
 
     return (
@@ -334,13 +328,13 @@ class Board extends Component {
           outputComponent={
             <Scannable disabled={!this.state.output.length}>
               <Output
-                backspaceButton={<Scannable>{this.renderBackspaceButton()}</Scannable>}
-                clearButton={<Scannable>{this.renderClearButton()}</Scannable>}
+                backspaceButton={backspaceButton}
+                clearButton={clearButton}
                 dir={dir}
+                interactiveWrapper={Scannable}
                 onChange={this.changeOutput}
                 onClick={this.handleOutputClick}
                 renderValue={this.renderSymbol}
-                scrollWrapper={Scannable}
                 values={this.state.output}
               />
             </Scannable>
