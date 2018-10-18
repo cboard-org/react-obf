@@ -73,7 +73,7 @@ class Example extends Component {
 | [`onPlaySound`](#onPlaySoundProp)             | Function |          | Callback, fired when requesting to play sound.                                                |
 | [`onSpeak`](#onSpeakProp)                     | Function |          | Callback, fired when requesting to speak.                                                     |
 | [`output`](#outputProp)                       | Array    |          | Output to display.                                                                            |
-| [`outputHidden`](#outputHiddenProp)           | Boolean  |          | If true, output is hidden                                                                     |
+| [`outputHidden`](#outputHiddenProp)           | Boolean  |          | When `true`, output is hidden.                                                                |
 | [`renderBoardButton`](#renderBoardButtonProp) | Function | ✓        | Board button renderer                                                                         |
 | [`scanInterval`](#scanIntervalProp)           | Number   |          | Sets the scan rate interval when `scanning` is `true`.                                        |
 | [`scanning`](#scanningProp)                   | Boolean  |          | When `true`, scanner is activated.                                                            |
