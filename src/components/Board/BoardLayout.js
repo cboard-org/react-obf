@@ -29,15 +29,23 @@ class BoardLayout extends PureComponent {
   }
 
   render() {
-    const { dir, gridComponent, navbarComponent, outputComponent, size } = this.props;
+    const {
+      dir,
+      gridComponent,
+      navbarComponent,
+      outputComponent,
+      size,
+      toolbarComponent
+    } = this.props;
 
     const boardStyle = { fontSize: this.getFontSize(size) };
 
     return (
       <div className="Board" dir={dir} style={boardStyle}>
-        <div className="Board__output">{outputComponent}</div>
+        {outputComponent && <div className="Board__output">{outputComponent}</div>}
         <div className="Board__main">
           <div className="Board__navbar">{navbarComponent}</div>
+          {toolbarComponent && <div className="Board__toolbar">{toolbarComponent}</div>}
           <div className="Board__grid">{gridComponent}</div>
         </div>
       </div>
