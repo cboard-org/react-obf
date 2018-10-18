@@ -124,6 +124,14 @@ class Board extends Component {
      */
     dir: PropTypes.oneOf(['ltr', 'rtl']),
     /**
+     * Navbar start component.
+     */
+    navbarStart: PropTypes.node,
+    /**
+     * Navbar end component.
+     */
+    navbarEnd: PropTypes.node,
+    /**
      * Callback, fired when requesting to load board.
      * @param {Object} board
      */
@@ -166,6 +174,10 @@ class Board extends Component {
         vocalization: PropTypes.string
       })
     ),
+    /**
+     * If true, output is hidden
+     */
+    outputHidden: PropTypes.bool,
     /**
      * Board button renderer
      * @param {Object}
@@ -317,52 +329,70 @@ class Board extends Component {
   renderSymbol = ({ label, image }) => <Symbol label={label} src={image} />;
 
   render() {
-    const { backspaceButton, board, clearButton, dir, scanInterval, scanning, size } = this.props;
+    const {
+      backspaceButton,
+      board,
+      clearButton,
+      dir,
+      navbarStart,
+      navbarEnd,
+      outputHidden,
+      scanInterval,
+      scanning,
+      size
+    } = this.props;
+
     const { grid } = board;
+
+    const outputComponent = outputHidden ? null : (
+      <Scannable disabled={!this.state.output.length}>
+        <Output
+          backspaceButton={backspaceButton}
+          clearButton={clearButton}
+          dir={dir}
+          interactiveWrapper={Scannable}
+          onChange={this.changeOutput}
+          onClick={this.handleOutputClick}
+          renderValue={this.renderSymbol}
+          values={this.state.output}
+        />
+      </Scannable>
+    );
+
+    const navbarComponent = (
+      <Bar
+        groupStart={navbarStart}
+        groupMiddle={<div className="Board__name">{board.name}</div>}
+        groupEnd={navbarEnd}
+      />
+    );
+
+    const gridComponent = (
+      <SizeMe monitorHeight>
+        {({ size }) => (
+          <Scannable>
+            <Grid
+              columns={grid.columns}
+              items={this.state.buttons}
+              order={grid.order}
+              renderItem={this.renderBoardButton}
+              rows={grid.rows}
+              rowWrapper={Scannable}
+              size={size}
+            />
+          </Scannable>
+        )}
+      </SizeMe>
+    );
 
     return (
       <Scanner active={scanning} iterationInterval={scanInterval}>
         <BoardLayout
           dir={dir}
           size={size}
-          outputComponent={
-            <Scannable disabled={!this.state.output.length}>
-              <Output
-                backspaceButton={backspaceButton}
-                clearButton={clearButton}
-                dir={dir}
-                interactiveWrapper={Scannable}
-                onChange={this.changeOutput}
-                onClick={this.handleOutputClick}
-                renderValue={this.renderSymbol}
-                values={this.state.output}
-              />
-            </Scannable>
-          }
-          navbarComponent={
-            <Bar
-              groupStart={null}
-              groupMiddle={<div className="Board__name">{board.name}</div>}
-              groupEnd={null}
-            />
-          }
-          gridComponent={
-            <SizeMe monitorHeight>
-              {({ size }) => (
-                <Scannable>
-                  <Grid
-                    columns={grid.columns}
-                    items={this.state.buttons}
-                    order={grid.order}
-                    renderItem={this.renderBoardButton}
-                    rows={grid.rows}
-                    rowWrapper={Scannable}
-                    size={size}
-                  />
-                </Scannable>
-              )}
-            </SizeMe>
-          }
+          outputComponent={outputComponent}
+          navbarComponent={navbarComponent}
+          gridComponent={gridComponent}
         />
       </Scanner>
     );

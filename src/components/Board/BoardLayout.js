@@ -35,7 +35,7 @@ class BoardLayout extends PureComponent {
 
     return (
       <div className="Board" dir={dir} style={boardStyle}>
-        <div className="Board__output">{outputComponent}</div>
+        {outputComponent && <div className="Board__output">{outputComponent}</div>}
         <div className="Board__main">
           <div className="Board__navbar">{navbarComponent}</div>
           <div className="Board__grid">{gridComponent}</div>
