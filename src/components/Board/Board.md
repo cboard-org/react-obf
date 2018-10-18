@@ -65,6 +65,7 @@ const handleFileUpload = event => {
     dir="ltr"
     onLoadBoard={loadBoard}
     onSpeak={speak}
+    outputHidden={true}
     renderBoardButton={renderBoardButton}
     scanning={state.scanning}
   />
