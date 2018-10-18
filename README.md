@@ -66,15 +66,19 @@ class Example extends Component {
 | [`board`](#boardProp)                         | Object   | ✓        | Board to display, needs to be [Open Board Format](http://www.openboardformat.org/) compliant. |
 | [`clearButton`](#clearButtonProp)             | Object   |          | Component to render output clear button.                                                      |
 | [`dir`](#dirProp)                             | String   |          | Board direction, one of: `ltr`, `rtl`.                                                        |
+| [`navbarStart`](#navbarStartPropProp)         | Object   |          | Component to render in navigation bar start region.                                           |
+| [`navbarEnd`](#navbarEndPropProp)             | Object   |          | Component to render in navigation bar end region.                                             |
 | [`onLoadBoard`](#onLoadBoardProp)             | Function |          | Callback, fired when requesting to load board.                                                |
 | [`onOutputChange`](#onOutputChangeProp)       | Function |          | Callback, fired when output changes.                                                          |
 | [`onPlaySound`](#onPlaySoundProp)             | Function |          | Callback, fired when requesting to play sound.                                                |
 | [`onSpeak`](#onSpeakProp)                     | Function |          | Callback, fired when requesting to speak.                                                     |
 | [`output`](#outputProp)                       | Array    |          | Output to display.                                                                            |
+| [`outputHidden`](#outputHiddenProp)           | Boolean  |          | If true, output is hidden                                                                     |
 | [`renderBoardButton`](#renderBoardButtonProp) | Function | ✓        | Board button renderer                                                                         |
 | [`scanInterval`](#scanIntervalProp)           | Number   |          | Sets the scan rate interval when `scanning` is `true`.                                        |
 | [`scanning`](#scanningProp)                   | Boolean  |          | When `true`, scanner is activated.                                                            |
 | [`size`](#sizeProp)                           | String   |          | UI size.                                                                                      |
+| [`toolbarProp`](#toolbarPropProp)             | Object   |          | Component to render toolbar.                                                                  |
 
 <a name="backspaceButtonProp"></a>
 
@@ -91,6 +95,14 @@ class Example extends Component {
 <a name="dirProp"></a>
 
 #### dir (optional)
+
+<a name="navbarStartProp"></a>
+
+#### navbarStart (optional)
+
+<a name="navbarEndProp"></a>
+
+#### navbarEnd (optional)
 
 <a name="onLoadBoardProp"></a>
 
@@ -127,6 +139,10 @@ class Example extends Component {
 <a name="sizeProp"></a>
 
 #### size (optional)
+
+<a name="toolbarProp"></a>
+
+#### toolbar (optional)
 
 ## License
 

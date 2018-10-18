@@ -344,7 +344,7 @@ class Board extends Component {
       scanInterval,
       scanning,
       size,
-      toolbarComponent
+      toolbar
     } = this.props;
 
     const { grid } = board;
@@ -398,7 +398,7 @@ class Board extends Component {
           outputComponent={outputComponent}
           navbarComponent={navbarComponent}
           gridComponent={gridComponent}
-          toolbarComponent={toolbarComponent}
+          toolbarComponent={toolbar}
         />
       </Scanner>
     );
