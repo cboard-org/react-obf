@@ -332,24 +332,10 @@ class Board extends Component {
 
   renderSymbol = ({ label, image }) => <Symbol label={label} src={image} />;
 
-  render() {
-    const {
-      backspaceButton,
-      board,
-      clearButton,
-      dir,
-      navbarStart,
-      navbarEnd,
-      outputHidden,
-      scanInterval,
-      scanning,
-      size,
-      toolbar
-    } = this.props;
+  renderOutput = () => {
+    const { backspaceButton, clearButton, dir } = this.props;
 
-    const { grid } = board;
-
-    const outputComponent = outputHidden ? null : (
+    return (
       <Scannable disabled={!this.state.output.length}>
         <Output
           backspaceButton={backspaceButton}
@@ -363,16 +349,26 @@ class Board extends Component {
         />
       </Scannable>
     );
+  };
 
-    const navbarComponent = (
+  renderNavbar = () => {
+    const { board, navbarStart, navbarEnd } = this.props;
+
+    return (
       <Bar
         groupStart={navbarStart}
         groupMiddle={<div className="Board__name">{board.name}</div>}
         groupEnd={navbarEnd}
       />
     );
+  };
 
-    const gridComponent = (
+  renderGrid = () => {
+    const {
+      board: { grid }
+    } = this.props;
+
+    return (
       <SizeMe monitorHeight>
         {({ size }) => (
           <Scannable>
@@ -389,16 +385,24 @@ class Board extends Component {
         )}
       </SizeMe>
     );
+  };
+
+  render() {
+    const { dir, scanInterval, scanning, size, toolbar } = this.props;
+
+    const output = this.renderOutput();
+    const navbar = this.renderNavbar();
+    const grid = this.renderGrid();
 
     return (
       <Scanner active={scanning} iterationInterval={scanInterval}>
         <BoardLayout
           dir={dir}
           size={size}
-          outputComponent={outputComponent}
-          navbarComponent={navbarComponent}
-          gridComponent={gridComponent}
+          outputComponent={output}
+          navbarComponent={navbar}
           toolbarComponent={toolbar}
+          gridComponent={grid}
         />
       </Scanner>
     );
