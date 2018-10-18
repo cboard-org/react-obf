@@ -18,10 +18,11 @@ class BoardLayout extends PureComponent {
      * Text direction
      */
     dir: PropTypes.oneOf(['ltr', 'rtl']),
-    gridComponent: PropTypes.node,
-    navbarComponent: PropTypes.node,
-    outputComponent: PropTypes.node,
-    size: PropTypes.oneOf(['default', 'large', 'larger'])
+    grid: PropTypes.node,
+    navbar: PropTypes.node,
+    output: PropTypes.node,
+    size: PropTypes.oneOf(['default', 'large', 'larger']),
+    toolbar: PropTypes.node
   };
 
   getFontSize(size) {
@@ -29,24 +30,17 @@ class BoardLayout extends PureComponent {
   }
 
   render() {
-    const {
-      dir,
-      gridComponent,
-      navbarComponent,
-      outputComponent,
-      size,
-      toolbarComponent
-    } = this.props;
+    const { dir, grid, navbar, output, size, toolbar } = this.props;
 
     const boardStyle = { fontSize: this.getFontSize(size) };
 
     return (
       <div className="Board" dir={dir} style={boardStyle}>
-        {outputComponent && <div className="Board__output">{outputComponent}</div>}
+        {output && <div className="Board__output">{output}</div>}
         <div className="Board__main">
-          <div className="Board__navbar">{navbarComponent}</div>
-          {toolbarComponent && <div className="Board__toolbar">{toolbarComponent}</div>}
-          <div className="Board__grid">{gridComponent}</div>
+          <div className="Board__navbar">{navbar}</div>
+          {toolbar && <div className="Board__toolbar">{toolbar}</div>}
+          <div className="Board__grid">{grid}</div>
         </div>
       </div>
     );

@@ -399,10 +399,10 @@ class Board extends Component {
         <BoardLayout
           dir={dir}
           size={size}
-          outputComponent={output}
-          navbarComponent={navbar}
-          toolbarComponent={toolbar}
-          gridComponent={grid}
+          output={output}
+          navbar={navbar}
+          toolbar={toolbar}
+          grid={grid}
         />
       </Scanner>
     );
