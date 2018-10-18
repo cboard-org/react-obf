@@ -175,7 +175,7 @@ class Board extends Component {
       })
     ),
     /**
-     * If true, output is hidden
+     * When `true`, output is hidden
      */
     outputHidden: PropTypes.bool,
     /**
@@ -198,7 +198,7 @@ class Board extends Component {
     /**
      * Component to render toolbar.
      */
-    toolbarComponent: PropTypes.node
+    toolbar: PropTypes.node
   };
 
   static defaultProps = {
