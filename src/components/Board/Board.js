@@ -333,9 +333,9 @@ class Board extends Component {
   renderSymbol = ({ label, image }) => <Symbol label={label} src={image} />;
 
   renderOutput = () => {
-    const { backspaceButton, clearButton, dir } = this.props;
+    const { backspaceButton, clearButton, dir, outputHidden } = this.props;
 
-    return (
+    return outputHidden ? null : (
       <Scannable disabled={!this.state.output.length}>
         <Output
           backspaceButton={backspaceButton}
