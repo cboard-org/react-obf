@@ -35,7 +35,7 @@ const denormalizeBoardButtons = board =>
 class Board extends Component {
   static propTypes = {
     /**
-     * Component to render output backspace button.
+     * Component to render backspace button.
      */
     backspaceButton: PropTypes.node,
     /**
@@ -116,7 +116,7 @@ class Board extends Component {
       })
     }),
     /**
-     * Component to render output clear button.
+     * Component to render clear button.
      */
     clearButton: PropTypes.node,
     /**
@@ -124,11 +124,11 @@ class Board extends Component {
      */
     dir: PropTypes.oneOf(['ltr', 'rtl']),
     /**
-     * Navbar start component.
+     * Component to render in navbar start region.
      */
     navbarStart: PropTypes.node,
     /**
-     * Navbar end component.
+     * Component to render in navbar end region.
      */
     navbarEnd: PropTypes.node,
     /**
@@ -194,7 +194,11 @@ class Board extends Component {
     /**
      * UI size.
      */
-    size: PropTypes.oneOf(['default', 'large', 'larger'])
+    size: PropTypes.oneOf(['default', 'large', 'larger']),
+    /**
+     * Component to render toolbar.
+     */
+    toolbarComponent: PropTypes.node
   };
 
   static defaultProps = {
@@ -339,7 +343,8 @@ class Board extends Component {
       outputHidden,
       scanInterval,
       scanning,
-      size
+      size,
+      toolbarComponent
     } = this.props;
 
     const { grid } = board;
@@ -393,6 +398,7 @@ class Board extends Component {
           outputComponent={outputComponent}
           navbarComponent={navbarComponent}
           gridComponent={gridComponent}
+          toolbarComponent={toolbarComponent}
         />
       </Scanner>
     );

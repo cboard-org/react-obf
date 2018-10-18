@@ -6,7 +6,7 @@ import './Scroll.css';
 
 const invertDir = dir => (dir === 'rtl' ? 'ltr' : 'rtl');
 
-export class Scroll extends PureComponent {
+class Scroll extends PureComponent {
   static propTypes = {
     /**
      * Text direction
