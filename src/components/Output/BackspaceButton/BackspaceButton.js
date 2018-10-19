@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import classNames from 'classnames';
 
-import ButtonBase from '../ButtonBase/ButtonBase';
+import ButtonBase from '../../ButtonBase/ButtonBase';
 import BackspaceSvg from './BackspaceSvg';
 import './BackspaceButton.css';
 

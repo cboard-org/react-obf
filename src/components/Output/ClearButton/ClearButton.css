@@ -1,12 +1,13 @@
-/* TODO: duplicate code with ClearButton */
-.BackspaceButton {
+/* TODO: duplicate code with BackspaceButton */
+.ClearButton {
   padding: 0.5em;
   line-height: 0;
   transition: background-color 0.25s;
   border-radius: 4px;
+  color: #444;
 }
 
-.BackspaceButton:hover,
-.BackspaceButton:focus {
+.ClearButton:hover,
+.ClearButton:focus {
   background: rgba(0, 0, 0, 0.15);
 }

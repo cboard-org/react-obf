@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { SizeMe } from 'react-sizeme';
 
 import Symbol from '../Symbol/Symbol';
-import Bar from '../Bar/Bar';
 import Grid from '../Grid/Grid';
 import Output from '../Output/Output';
 
@@ -124,13 +123,9 @@ class Board extends Component {
      */
     dir: PropTypes.oneOf(['ltr', 'rtl']),
     /**
-     * Component to render in navbar start region.
+     * Component to render navigation bar.
      */
-    navbarStart: PropTypes.node,
-    /**
-     * Component to render in navbar end region.
-     */
-    navbarEnd: PropTypes.node,
+    navbar: PropTypes.node,
     /**
      * Callback, fired when requesting to load board.
      * @param {Object} board
@@ -352,14 +347,13 @@ class Board extends Component {
   };
 
   renderNavbar = () => {
-    const { board, navbarStart, navbarEnd } = this.props;
-
-    return (
-      <Bar
-        groupStart={navbarStart}
-        groupMiddle={<div className="Board__name">{board.name}</div>}
-        groupEnd={navbarEnd}
-      />
+    const { board, navbar } = this.props;
+    return navbar ? (
+      navbar
+    ) : (
+      <div className="Board__name">
+        <div>{board.name}</div>
+      </div>
     );
   };
 

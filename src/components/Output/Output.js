@@ -2,8 +2,8 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-import BackspaceButton from '../BackspaceButton/BackspaceButton';
-import ClearButton from '../ClearButton/ClearButton';
+import BackspaceButton from './BackspaceButton/BackspaceButton';
+import ClearButton from './ClearButton/ClearButton';
 import Scroll from './Scroll/Scroll';
 import './Output.css';
 
