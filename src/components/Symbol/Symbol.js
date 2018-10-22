@@ -24,7 +24,7 @@ function Symbol(props) {
     <div className={symbolClassName} {...other}>
       {src && (
         <div className="Symbol__image-container">
-          <img className="Symbol__image" src={src} alt="" />
+          <img className="Symbol__image" src={src} alt="" key={src} />
         </div>
       )}
       <div className="Symbol__label">{label}</div>
