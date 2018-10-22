@@ -3,9 +3,6 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  font-family: sans-serif;
-  background: #fff;
-  color: #222;
   user-select: none;
 }
 
@@ -20,12 +17,10 @@
 }
 
 .Board__navbar {
-  display: flex;
   flex-shrink: 0;
 }
 
 .Board__name {
-  width: 100%;
   height: 3em;
   display: flex;
   align-items: center;
