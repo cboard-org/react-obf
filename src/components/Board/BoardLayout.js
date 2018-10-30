@@ -40,7 +40,7 @@ class BoardLayout extends PureComponent {
         <div className="Board__main">
           <div className="Board__navbar">{navbar}</div>
           {toolbar && <div className="Board__toolbar">{toolbar}</div>}
-          <div className="Board__grid">{grid}</div>
+          <div className="Board__buttons">{grid}</div>
         </div>
       </div>
     );
