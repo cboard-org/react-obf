@@ -79,11 +79,11 @@ class Grid extends Component {
   render() {
     const { className, gap, renderItem, rows, rowWrapper: RowWrapper, size } = this.props;
 
-    const cellMargin = gap / 2;
+    const space = gap / 2;
     const rowHeight = size.height / rows;
 
     const gridStyle = {
-      '--cell-margin': `${cellMargin}px`,
+      '--space-unit': `${space}px`,
       '--row-height': `${rowHeight}px`
     };
 
