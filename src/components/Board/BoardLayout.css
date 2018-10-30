@@ -29,6 +29,7 @@
   color: #fff;
 }
 
-.Board__grid {
+.Board__buttons {
   flex: 1;
+  overflow: auto;
 }
