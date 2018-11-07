@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import colorContrast from 'color-contrast';
 
-import ButtonBase from '../ButtonBase/ButtonBase';
 import Symbol from '../Symbol/Symbol';
 import './BoardButton.css';
 
@@ -87,10 +86,10 @@ const BoardButton = props => {
   };
 
   return (
-    <ButtonBase className={className} style={style} {...other}>
+    <button type="button" className={className} style={style} {...other}>
       <Symbol label={label} src={image} />
       {children}
-    </ButtonBase>
+    </button>
   );
 };
 
