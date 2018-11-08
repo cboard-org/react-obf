@@ -29,7 +29,7 @@ class Output extends PureComponent {
     /**
      * Callback, fired when output changes
      */
-    onChange: PropTypes.func,
+    onChange: PropTypes.func.isRequired,
     /**
      * Callback, fired when output is clicked
      */
