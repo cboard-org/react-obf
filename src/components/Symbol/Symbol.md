@@ -6,7 +6,7 @@ const props = {
   src: 'https://s3.amazonaws.com/opensymbols/libraries/mulberry/communication aid 2.svg'
 };
 
-<div style={{ height: '200px'}}>
+<div style={{ height: '200px', width: '200px'}}>
   <Symbol {...props} />
 </div>;
 ```

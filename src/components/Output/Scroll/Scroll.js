@@ -26,8 +26,11 @@ class Scroll extends PureComponent {
   scrollToEnd() {
     const { dir } = this.props;
     const scrollRef = this.scrollRef.current;
-    const scrollXEnd = dir === 'ltr' ? scrollRef.scrollWidth - scrollRef.offsetWidth : 0;
-    scrollRef.scroll(scrollXEnd, 0);
+
+    if (scrollRef.scroll) {
+      const scrollXEnd = dir === 'ltr' ? scrollRef.scrollWidth - scrollRef.offsetWidth : 0;
+      scrollRef.scroll(scrollXEnd, 0);
+    }
   }
 
   componentDidUpdate(prevProps) {
