@@ -12,7 +12,7 @@ const initialState = {
   scanning: false
 };
 
-const renderBoardButton = boardButton => <BoardButton {...boardButton} />;
+const renderButton = button => <Tile {...button} />;
 
 const loadBoard = loadBoard => {
   const board = state.boardSet.boards[loadBoard.path] || state.boardSet.boards[loadBoard.id];
@@ -65,7 +65,7 @@ const handleFileUpload = event => {
     dir="ltr"
     onLoadBoard={loadBoard}
     onSpeak={speak}
-    renderBoardButton={renderBoardButton}
+    renderButton={renderButton}
     scanning={state.scanning}
   />
 </div>;

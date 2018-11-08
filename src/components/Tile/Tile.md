@@ -1,4 +1,4 @@
-Basic BoardButton:
+Basic Tile:
 
 ```jsx
 const props = {
@@ -9,6 +9,6 @@ const props = {
 };
 
 <div style={{ height: '200px', width: '200px' }}>
-  <BoardButton {...props} />
+  <Tile {...props} />
 </div>;
 ```

@@ -1,4 +1,4 @@
-.BoardButton {
+.Tile {
   position: relative;
   box-sizing: border-box;
   height: 100%;
@@ -9,7 +9,7 @@
 }
 
 /* overlay effect */
-.BoardButton::after {
+.Tile::after {
   content: '';
   position: absolute;
   top: 0;
@@ -20,16 +20,16 @@
   opacity: 0;
 }
 
-.BoardButton:hover::after,
-.BoardButton:focus::after {
+.Tile:hover::after,
+.Tile:focus::after {
   opacity: 0.8;
 }
 
-.BoardButton:active::after {
+.Tile:active::after {
   opacity: 1;
 }
 
-.BoardButton--folder::before {
+.Tile--folder::before {
   content: '';
   position: absolute;
   top: 0;

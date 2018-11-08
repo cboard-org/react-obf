@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import colorContrast from 'color-contrast';
 
 import Symbol from '../Symbol/Symbol';
-import './BoardButton.css';
+import './Tile.css';
 
 const WcagContrastRatio = {
   AAA: 7,
@@ -30,7 +30,7 @@ const propTypes = {
    */
   border_color: PropTypes.string,
   /**
-   * BoardButton content
+   * Tile content
    */
   children: PropTypes.node,
   /**
@@ -55,7 +55,7 @@ const defaultProps = {
   background_color: 'rgb(255, 255, 255)'
 };
 
-const BoardButton = props => {
+const Tile = props => {
   const {
     background_color,
     border_color,
@@ -72,8 +72,8 @@ const BoardButton = props => {
 
   const folder = load_board && 'folder';
 
-  const className = classNames('BoardButton', classNameProp, {
-    'BoardButton--folder': folder
+  const className = classNames('Tile', classNameProp, {
+    'Tile--folder': folder
   });
 
   const contrastColor = getContrastColor(background_color);
@@ -93,7 +93,7 @@ const BoardButton = props => {
   );
 };
 
-BoardButton.propTypes = propTypes;
-BoardButton.defaultProps = defaultProps;
+Tile.propTypes = propTypes;
+Tile.defaultProps = defaultProps;
 
-export default BoardButton;
+export default Tile;

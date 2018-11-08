@@ -1,5 +1,6 @@
 import Board from './components/Board/Board';
-import BoardButton from './components/BoardButton/BoardButton';
 import Output from './components/Output/Output';
+import Symbol from './components/Symbol/Symbol';
+import Tile from './components/Tile/Tile';
 
-export { Board, BoardButton, Output };
+export { Board, Output, Symbol, Tile };

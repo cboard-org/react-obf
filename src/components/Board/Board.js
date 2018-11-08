@@ -174,10 +174,10 @@ class Board extends Component {
      */
     outputHidden: PropTypes.bool,
     /**
-     * Board button renderer
+     * Button renderer
      * @param {Object}
      */
-    renderBoardButton: PropTypes.func,
+    renderButton: PropTypes.func,
     /**
      * Sets the scan rate interval when `scanning` is `true`.
      */
@@ -311,12 +311,12 @@ class Board extends Component {
     onSpeak && onSpeak(text);
   };
 
-  renderBoardButton = button => {
-    const { renderBoardButton } = this.props;
+  renderButton = button => {
+    const { renderButton } = this.props;
 
     return button.hidden ? null : (
       <Scannable>
-        {React.cloneElement(renderBoardButton(button), {
+        {React.cloneElement(renderButton(button), {
           onClick: () => {
             this.handleBoardButtonClick(button);
           }
@@ -370,7 +370,7 @@ class Board extends Component {
               columns={grid.columns}
               items={this.state.buttons}
               order={grid.order}
-              renderItem={this.renderBoardButton}
+              renderItem={this.renderButton}
               rows={grid.rows}
               rowWrapper={Scannable}
               size={size}

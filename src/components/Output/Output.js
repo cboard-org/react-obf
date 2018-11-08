@@ -37,7 +37,7 @@ class Output extends PureComponent {
     /**
      * Render value
      */
-    renderValue: PropTypes.func,
+    renderValue: PropTypes.func.isRequired,
     /**
      *
      */
@@ -49,7 +49,7 @@ class Output extends PureComponent {
   };
 
   static defaultProps = {
-    scrollWrapper: props => props.children,
+    interactiveWrapper: props => props.children,
     values: []
   };
 
