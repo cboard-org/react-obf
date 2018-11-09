@@ -1,6 +1,5 @@
 # react-obf
-
->
+react-obf is an [Open Board Format](http://www.openboardformat.org/) renderer.
 
 [![NPM](https://img.shields.io/npm/v/react-obf.svg)](https://www.npmjs.com/package/react-obf)
 
@@ -8,10 +7,10 @@
 
 - Supports OBF natively
 - Full control over [button rendering](#renderButtonProp)
-- Scanning mode
 - Grid size
 - Grid order
-- LTR / RTL direction
+- LTR / RTL direction,
+- Scanning mode
 
 ## Install
 
