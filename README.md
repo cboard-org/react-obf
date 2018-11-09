@@ -7,7 +7,7 @@
 ## Features
 
 - Supports OBF natively
-- Full control over [board button rendering](#renderBoardButtonProp)
+- Full control over [button rendering](#renderButtonProp)
 - Scanning mode
 - Grid size
 - Grid order
@@ -23,7 +23,7 @@ npm install --save react-obf
 
 ```jsx
 import React, { Component } from 'react';
-import { Board, BoardButton } from 'react-obf';
+import { Board, Tile } from 'react-obf';
 
 import boardSet from './communikate-20.json';
 
@@ -41,8 +41,8 @@ class Example extends Component {
     this.setState({ board: boardSet.boards[board.id] });
   };
 
-  renderBoardButton(boardButton) {
-    return <BoardButton {...boardButton} />;
+  renderButton(button) {
+    return <Tile {...button} />;
   }
 
   render() {
@@ -51,7 +51,7 @@ class Example extends Component {
         board={this.state.board}
         onLoadBoard={this.loadBoard}
         onSpeak={this.speak}
-        renderBoardButton={this.renderBoardButton}
+        renderButton={this.renderButton}
       />
     );
   }
@@ -74,7 +74,7 @@ class Example extends Component {
 | [`onSpeak`](#onSpeakProp) | Function | | Callback, fired when requesting to speak. |
 | [`output`](#outputProp) | Array | | Output to display. |
 | [`outputHidden`](#outputHiddenProp) | Boolean | | When `true`, output is hidden. |
-| [`renderBoardButton`](#renderBoardButtonProp) | Function | ✓ | Board button renderer |
+| [`renderButton`](#renderButtonProp) | Function | ✓ | Board button renderer |
 | [`scanInterval`](#scanIntervalProp) | Number | | Sets the scan rate interval when `scanning` is `true`. |
 | [`scanning`](#scanningProp) | Boolean | | When `true`, scanner is activated. |
 | [`size`](#sizeProp) | String | | UI size. |
@@ -120,9 +120,9 @@ class Example extends Component {
 
 #### output (optional)
 
-<a name="renderBoardButtonProp"></a>
+<a name="renderButtonProp"></a>
 
-#### renderBoardButton (required)
+#### renderButton (required)
 
 <a name="scanIntervalProp"></a>
 
