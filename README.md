@@ -76,7 +76,7 @@ class Example extends Component {
 | [`scanInterval`](#scanIntervalProp) | Number | | Sets the scan rate interval when `scanning` is `true`. |
 | [`scanning`](#scanningProp) | Boolean | | When `true`, scanner is activated. |
 | [`size`](#sizeProp) | String | | UI size. |
-| [`toolbarProp`](#toolbarPropProp) | Object | | Component to render toolbar. |
+| [`toolbar`](#toolbarPropProp) | Object | | Component to render toolbar. |
 
 <a name="backspaceButtonProp"></a>
 
