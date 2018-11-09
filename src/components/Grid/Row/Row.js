@@ -9,10 +9,10 @@ const propTypes = {
 };
 
 function Row(props) {
-  const { className, ...other } = props;
-  const rowClassName = classNames('Row', className);
+  const { className: classNameProp, ...other } = props;
+  const className = classNames('Row', classNameProp);
 
-  return <div className={rowClassName} {...other} />;
+  return <div className={className} {...other} />;
 }
 
 Row.propTypes = propTypes;

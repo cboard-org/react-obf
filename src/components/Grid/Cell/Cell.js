@@ -9,10 +9,10 @@ const propTypes = {
 };
 
 function Cell(props) {
-  const { className, ...other } = props;
-  const cellClassName = classNames('Cell', className);
+  const { className: classNameProp, ...other } = props;
+  const className = classNames('Cell', classNameProp);
 
-  return <div className={cellClassName} {...other} />;
+  return <div className={className} {...other} />;
 }
 
 Cell.propTypes = propTypes;

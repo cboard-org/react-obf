@@ -7,6 +7,6 @@
   height: calc(100% - (var(--space-unit, 8px) * 2));
   margin: var(--space-unit, 8px);
   border-radius: 2px;
-  /* solves rendering issues with iOS */
+  /* min width solves rendering issues with iOS */
   min-width: 0;
 }

@@ -203,7 +203,7 @@ class Board extends Component {
   };
 
   static getDerivedStateFromProps(props, state) {
-    // TODO optimize getDerivedStateFromProps
+    // TODO: remove derived state
     const buttons = denormalizeBoardButtons(props.board);
     const output = props.output || state.output;
     return { ...state, buttons, output };

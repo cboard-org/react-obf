@@ -61,6 +61,7 @@ class Grid extends Component {
   };
 
   static getDerivedStateFromProps(nextProps, prevState) {
+    // TODO: remove derived state
     const { items, columns, order, rows } = nextProps;
     const emptyGrid = createEmptyGrid(rows, columns);
     const sortedGrid = sortGrid(emptyGrid, order, items);
@@ -77,7 +78,14 @@ class Grid extends Component {
   }
 
   render() {
-    const { className, gap, renderItem, rows, rowWrapper: RowWrapper, size } = this.props;
+    const {
+      className: classNameProp,
+      gap,
+      renderItem,
+      rows,
+      rowWrapper: RowWrapper,
+      size
+    } = this.props;
 
     const space = gap / 2;
     const rowHeight = size.height / rows;
@@ -87,10 +95,10 @@ class Grid extends Component {
       '--row-height': `${rowHeight}px`
     };
 
-    const gridClassName = classNames('Grid', className);
+    const className = classNames('Grid', classNameProp);
 
     return (
-      <div className={gridClassName} style={gridStyle}>
+      <div className={className} style={gridStyle}>
         {this.state.grid.map((row, rowIndex) => (
           <RowWrapper key={rowIndex} disabled={isEmptyArray(row)}>
             <Row>
