@@ -66,7 +66,6 @@ class Example extends Component {
 | [`clearButton`](#clearButtonProp)         | Object |          | Component to render output clear button.                                                      |
 | [`dir`](#dirProp)                         | String |          | Board direction, one of: `ltr`, `rtl`.                                                        |
 | [`navbar`](#navbarPropProp)               | Object |          | Component to render navigation bar.                                                           |
-
 | [`onLoadBoard`](#onLoadBoardProp) | Function | | Callback, fired when requesting to load board. |
 | [`onOutputChange`](#onOutputChangeProp) | Function | | Callback, fired when output changes. |
 | [`onPlaySound`](#onPlaySoundProp) | Function | | Callback, fired when requesting to play sound. |
