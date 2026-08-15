@@ -1,4 +1,7 @@
 # react-obf
+
+> **Archived:** This project is no longer maintained, and the `react-obf` npm package has been unpublished. The repository remains available for historical and reference purposes.
+
 react-obf is an [Open Board Format](http://www.openboardformat.org/) renderer.
 
 [![NPM](https://img.shields.io/npm/v/react-obf.svg)](https://www.npmjs.com/package/react-obf)
